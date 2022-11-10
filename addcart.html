@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cart page</title>
     <link rel="stylesheet" href="./Style/addcart.css">
+    <link rel="stylesheet" href="./Style/index.css">
 
 </head>
 <body>
@@ -44,7 +45,7 @@
         
           
            
-            <div> <button>ESTIMATE SHIPPING AND TAX <span><img style="width: 20PX;" src="https://cdn-icons-png.flaticon.com/512/2951/2951226.png" alt=""></span></button></div>
+            <div> <button id="tax_data">ESTIMATE SHIPPING AND TAX <span><img style="width: 20PX;" src="https://cdn-icons-png.flaticon.com/512/2951/2951226.png" alt=""></span></button></div>
                
                <p>Enter your destination to get a shipping estimate.</p>
        
@@ -123,16 +124,19 @@
             </table>
             <hr>
             
-            <button>APPLY DISCOUNT CODE <span><img style="width:20PX;" src="https://cdn-icons-png.flaticon.com/512/2951/2951226.png" alt=""></span></button>
+            <button id="applydiscount">APPLY DISCOUNT CODE <span><img style="width:20PX;" src="https://cdn-icons-png.flaticon.com/512/2951/2951226.png" alt=""></span></button>
            <div id="discount">
            <input type="text" name="" placeholder="Enter discount code" id="coupon">
            <button>APPLY DISCOUNT</button>
            </div>
             
             <!-- here -->
-            <DIV id="proceed_btn">
-                <button id="proceedPayment">PROCEED TO CHECKOUT</button>
-            </DIV>
+            <a href="checkout.html" >
+                <DIV id="proceed_btn" >
+                    <button id="proceedPayment">PROCEED TO CHECKOUT</button>
+                </DIV>
+            </a>
+           
             
 
       
