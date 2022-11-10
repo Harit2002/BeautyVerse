@@ -1,5 +1,5 @@
-const navbar = () =>{
-return `<div id="navbar-1">
+const navbar = () => {
+    return `<div id="navbar-1">
   <div id="logo">
   <a href="/-puny-corn-6420/index.html">
   <img  alt="logo"  src="https://i.ibb.co/SvQjVHw/image.png"/>
@@ -68,9 +68,12 @@ return `<div id="navbar-1">
             <a href = "/-puny-corn-6420/Products Pages/brand.html"><span id="brand">BRAND</span></a>
         </div>
         <div id="cart-div">
+            <a href="./addcart.html">
             <img src="/shopping-bag-32.ico" alt="">
             <span>My Cart - </span>
             <span id="cart2">0.00</span>
+            </a>
+    
         </div>
     </nav>`
 }
