@@ -1,13 +1,11 @@
-
-
-
-
-
 *{
-    margin: 0px;
-    padding: 0px;
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
 }
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 #top-img {
     width: 98%;
     height: auto;
@@ -18,7 +16,7 @@
 #navbar-1 {
     display: flex;
     justify-content: space-between;
-    width: 88%;
+    width: 90%;
     height: 100px;
     margin: auto;
     border: 0px solid black;
@@ -37,19 +35,18 @@
 }
 
 #btns {
-    width: 50%;
+    width: 40%;
     margin: 8px 10px;
-    height: 40px;
+    height: 80px;
     display: flex;
     border: 0px solid black;
 }
 #cat{
     width: 30%;
-    margin: 20px 0px 15px 15px;
-    padding-right: 5px;
+    margin: 15px 0px 15px 15px;
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 50px;
     border: 1px solid black;
 }
 #cat>select{
@@ -70,10 +67,10 @@
 #srch-bar{
     width: 50%;
     height: auto;
-    margin: 20px 0px 15px 0px;
+    margin: 15px 0px 15px 0px;
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 50px;
     border: 1px solid black;
 }
 #srch-bar>input{
@@ -93,145 +90,84 @@
     border: 0px solid black;
 }
 #srch-btn>button{
-    height: 42px;
+    height: 50px;
     align-items: center;
     text-align: center;
     border: none;
     width: 100%;
-    margin-top: 2px;
     padding: 15px;
     background-color:  #dd0285;
 } 
 #srch-btn>button>img{
-    width: 60%;
-    margin-top: -6px;
+    width: 100%;
 }
 #wish{
-    width: 16%;
-     margin: 25px 10px 15px 15px; 
+    width: 20%;
+     margin: 15px 15px 15px 0px; 
     align-items: center;
-    height: 30px;
+    height: 50px;
     border: 1px solid black;
 }
 #wish>button{
-    height: 10px;
+    height: 50px;
     align-items: center;
     text-align: center;
     border: none;
-    width: 140%;
+    width: 100%;
     padding: 12px;
     background: none;
 } 
 #wish>button>img{
-    width: 90%;
-    margin-top: -7px;
-    margin-left: -10px;
+    width: 100%;
 }
 #wish:hover{
     background-color:    #dd0285;
 }
 #account{
     width: 80%;
-     margin: 15px 15px 15px 15px; 
+     margin: 15px 15px 15px 0px; 
     align-items: center;
     height: 50px;
     display: flex;
     text-align: center;
-
+    border: 0px solid black;
 }
- #account>button{
-    height: 30px;
+#account>button{
+    height: 50px;
     align-items: center;
     text-align: center;
-    width: 18%;
-    border:none
-    /* border: 0.5px light */
- }
+    width: 30%;
+    padding: 12px;
+    background: none;
+} 
 #account>button>img{
-    width: 65%;
-    margin-top: 2px;
+    width: 100%;
 }
 #account>button:hover{
     background-color:    #dd0285; 
 }
 #account>h4{
-    font-size: 18px;
     margin-left: 10px;
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  margin-top: 120px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
- 
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-#navbar3 {
-    background-color: #dd0285;
+#navbar-2{
+    display: flex;
     width: 100%;
     height: 50px;
-    display: flex;
+    margin: auto;
+    border: 1px solid black;
     justify-content: space-evenly;
     align-items: center;
+    /* color: white; */
+    font-size: 10px;
+    background-color:  #dd0285;
+}
+#navbar-2>select{
+    border: none;
+    background-color: #dd0285;
+    font-weight: bold;
+    font-size: 15px;
     color: white;
 }
-
-.option {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.option>div{
-    display: flex;
-}
-
-.option>a {
-    font-size: 14px;
-    padding: 15px 20px;
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    font-weight: bolder;
-}
-#cart-div{
-    padding: 15px 29px;
-}
-
-.option>a:nth-child(1),#cart-div{
-    cursor: pointer;
-    background-color: #b7026f;
-}
-.option>a:hover{
-    cursor: pointer;
-    background-color: #b7026f;
-}
-
-
-
-
-
 #cart{
 width: 13%;
 height: 40px;
@@ -251,7 +187,7 @@ border: 0px solid black;
     padding: 10px;
     background: none;
     border: none;
-}
+} 
 #cart>button>img{
     width: 100%;
 }
@@ -259,3 +195,43 @@ border: 0px solid black;
 
 
 
+
+.container{
+   margin: auto;
+   text-align: center;
+   margin-top: 50px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid;
+    margin: auto;
+    margin-top: 100px;
+    text-align: left;
+    gap: 5px;
+    padding: 50px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+#form>h3{
+    margin-top: 20px;
+    color: #666666;
+   
+}
+#button{
+    margin:auto;
+    padding: 5px;
+}
+input{
+    height: 30px;
+    border: 1px solid #ddd;
+    padding: 7px;
+    text-transform: lowercase;
+}
+#AppendButtonHere{
+    /* display: none; */
+    margin: auto;
+    padding: 5px;
+    width: 300px;
+}
