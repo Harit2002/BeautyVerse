@@ -868,7 +868,6 @@ function showprice() {
 
     <!-- product section -->
     <div id="product-div">
-        <h2>MAKEUP</h2>
 
         <!-- top sort section -->
         <div id="sort-div">
@@ -880,7 +879,7 @@ function showprice() {
                 <option value="htl">Price: High to low</option>
             </select>
 
-            <!-- <ul>
+            <ul>
                 <li>
                     1
                 </li>
@@ -899,7 +898,7 @@ function showprice() {
                 <li>
                     >
                 </li>
-            </ul> -->
+            </ul>
         </div>
 
         <!-- product lists -->
@@ -917,7 +916,7 @@ function showprice() {
                 <option value="htl">Price: High to low</option>
             </select>
 
-            <!-- <ul>
+            <ul>
                 <li id="one">
                     1
                 </li>
@@ -936,9 +935,12 @@ function showprice() {
                 <li>
                     >
                 </li>
-            </ul> -->
+            </ul>
 
         </div>`
 }
+
+
+
 
   export {showlist, showskin,showcolor,showprice,showbrand,showshades,showfom,side}
