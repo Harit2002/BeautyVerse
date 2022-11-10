@@ -1,6 +1,5 @@
 const navbar = () =>{
-  return `
-  <div id="navbar-1">
+return `<div id="navbar-1">
   <div id="logo">
   <a href="/-puny-corn-6420/index.html">
   <img  alt="logo"  src="https://i.ibb.co/SvQjVHw/image.png"/>
@@ -45,59 +44,18 @@ const navbar = () =>{
         <img src="https://cdn-icons-png.flaticon.com/512/1077/1077086.png"> 
       </button> 
   </div>
-
-  <div id="account">
-      <button>
-          <img style="width:10px;" src="https://cdn-icons-png.flaticon.com/512/709/709722.png"> 
-        </button> 
-
   <div id="account"  class = "dropdown">
       <button class = "dropbtn">
           <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png"> 
         </button>
         <div class="dropdown-content">
-        <a href="/-puny-corn-6420/register.html">Login</a>
-        <a href="/-puny-corn-6420/signin.html">Register</a>
+        <a href="/-puny-corn-6420/signin.html">Login</a>
+        <a href="/-puny-corn-6420/register.html">Register</a>
         </div> 
-
         <h4>My Account</h4>
   </div>
   </div>
   </div>
-
-  <div id="navbar-2">
- 
-      <select id="option" name="select">
-          <option value="makeup">MAKEUP</option>
-      </select>
-      <select id="option" name="select">
-          <option value="makeup">SKIN</option>
-      </select>
-      <select id="option" name="select">
-          <option value="makeup">HAIR</option>
-      </select>
-      <select id="option" name="select">
-          <option value="makeup">PERSONAL CARE</option>
-      </select>
-      <select id="option" name="select">
-          <option value="makeup">MOM&BABY CARE</option>
-      </select>
-      <select id="option" name="select">
-          <option value="makeup">FREAGNANCE</option>
-      </select>
-      <select id="option" name="select">
-          <option value="makeup">AYURVEDA</option>
-      </select>
-      <select id="option" name="select">
-          <option value="makeup">BRANDS</option>
-      </select>
-      <div id="cart-div">
-      <img src="/shopping-bag-32.ico" alt="">
-      <span>My Cart - </span>
-      <span id="cart2">0.00</span>
-  </div>
-  </div>`
-
   <nav id="navbar3">
         <div class="option">
             <a href = "/-puny-corn-6420/Products Pages/makeup.html"><span id="makeup">MAKEUP</span></a>
@@ -114,15 +72,13 @@ const navbar = () =>{
             <span>My Cart - </span>
             <span id="cart2">0.00</span>
         </div>
-
     </nav>`
-
 }
 
 
 
-const footer = () =>{
+const footer = () => {
     return ``
 }
 
-export {navbar,footer}
+export { navbar, footer }
