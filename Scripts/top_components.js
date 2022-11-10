@@ -1,5 +1,5 @@
-const navbar = () =>{
-  return `
+const navbar = () => {
+    return `
   <div id="navbar-1">
   <div id="logo">
   <a href="/-puny-corn-6420/index.html">
@@ -50,8 +50,8 @@ const navbar = () =>{
           <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png"> 
         </button>
         <div class="dropdown-content">
-        <a href="/-puny-corn-6420/register.html">Login</a>
-        <a href="/-puny-corn-6420/signin.html">Register</a>
+        <a href="/-puny-corn-6420/signin.html">Login</a>
+        <a href="/-puny-corn-6420/register.html">Register</a>
         </div> 
         <h4>My Account</h4>
   </div>
@@ -79,8 +79,8 @@ const navbar = () =>{
 
 
 
-const footer = () =>{
+const footer = () => {
     return ``
 }
 
-export {navbar,footer}
+export { navbar, footer }
