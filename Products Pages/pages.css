@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+#heading{
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 900;
+}
+#heading>span>a{
+    text-decoration: none;
+    color: black;
+}
 #container {
+    
     width: 80%;
     margin: 40px auto;
     display: flex;
@@ -75,7 +88,7 @@
 }
 
 .checked {
-    color: orange;
+    color: grey;
 }
 #card {
     height: 500px;
@@ -207,40 +220,37 @@
     color: black;
     margin-top: 10px;
 }
-
-
-/* Sidebar section*/
 #sidebar {
-    /* border: 2px solid black; */
+    
     width: 25%;
 }
 
-#sidebar>div:first-child {
-    /* border: 1px solid red; */
+#sidebar>#ctg {
+    
     padding: 10px -1px;
     font-weight: 300;
 }
 
-#sidebar>div:first-child,
+#sidebar>#ctg,
 #option>div {
-    /* padding: 8px 15px; */
+    
     font-weight: 300;
-    /* border: 1px solid red; */
+
     border-bottom: 2px solid #ebebeb;
     cursor: pointer;
 }
 
-#option {
+#sidebar>#option {
     margin-top: 25px;
     height: auto;
 }
 
-#option>h3 {
+#sidebar>#option>h3 {
     margin-left: -1px;
     margin-bottom: 10px;
 }
 
-#option>div:nth-child(2) {
+#sidebar>#option>div:nth-child(2) {
     border-top: 2px solid #ebebeb;
 }
 
@@ -272,12 +282,9 @@
 }
 
 #list>p {
-    line-height: 20px;
+    line-height: 1px;
     word-spacing: 8px;
 }
-
-
-/*  skin section */
 
 fieldset {
     display: flex;
