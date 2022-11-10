@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="./Style/addcart.css">
+    <link rel="stylesheet" href="./Style/index.css">
+
+</head>
+<body>
+    <div id="navbar">
+
+    </div>
+
+<div id="container">
+    <div id="products">
+        <h1>SHOPPING CART</h1>
+
+<Table>
+    <TH>
+        <TD>ITEMS</TD>
+        <td>PRICE</td>
+        <td>QTY</td>
+        <td>SUBTOTAL</td>
+    </TH>
+    <TBody>
+        <!-- append data of products here -->
+    </TBody>
+</Table>
+<div id="continue_update_btns">
+    <a href="index.html">
+        <button >CONTINUE SHOPPING</button>
+    </a>
+   <a href="addcart.html">
+    <BUTTon>UPDATE SHOPPING CART</BUTTon>
+   </a>
+   
+</div>
+    </div>
+<div id="summary">
+    <strong style="color: #444;">SUMMARY</strong>
+   
+        
+          
+           
+            <div> <button id="tax_data">ESTIMATE SHIPPING AND TAX <span><img style="width: 20PX;" src="https://cdn-icons-png.flaticon.com/512/2951/2951226.png" alt=""></span></button></div>
+               
+               <p>Enter your destination to get a shipping estimate.</p>
+       
+            <form action="" id="cart_form">
+          
+              
+                   <h3>country</h3>
+                    <select name="" id="country">
+                        <option value="in">India</option>
+                        <option value="us">USA</option>
+                        <option value="nz">China</option>
+                        <option value="nz">Nepal</option>
+                        <option value="nz"> North Korea</option>
+
+                    </select>
+                   <h3>State</h3>
+                    <select name="" id="State">
+                        <option value="">Choose State</option>
+                        <option value="as">ASSAM</option>
+                        <option value="bi">BIHAR</option>
+                        <option value="nz">UP</option>
+                        <option value="">Chhattisgarh </option>
+                        <option value="">Goa</option>
+                        <option value="">Gujarat</option>
+                        <option value="">Haryana</option>
+                        <option value="">Himachal Pradesh</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Kerala</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Meghalaya</option>
+                        <option value="">Odisha</option>
+                        <option value="">Rajasthan</option>
+                        <option value="">Sikkim</option>
+                        <option value="">Tamil Nadu</option>
+                       
+                  
+
+                    </select>
+                   <h3>Zip/Postal code</h3>
+                   
+                    <input style="width:95%;" 
+                type="number" id="zidcode">
+<h3>Best way</h3>
+<span>
+    <INPut type="checkbox">Max 7 Business days <span><img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/5889/5889989.png" alt="">0.00</span></INPut>
+</span>
+
+               
+          </form>
+            <!-- arif stop here -->
+<hr>
+            <table>
+               
+                <tr>
+                    <th>Subtotal</th>
+                    <td id="subtotal">
+                    789.00
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th>Shipping (Best Way - Max 7 Business days)</th>
+                    <td id="shippingcharge">
+                    879.00
+                    </td>
+                </tr>
+               
+                <tr>
+                    <th>Order Total Incl.GST</th>
+                    <td id="total">
+                 1234.00
+                    </td>
+                </tr>
+               
+            </table>
+            <hr>
+            
+            <button id="applydiscount">APPLY DISCOUNT CODE <span><img style="width:20PX;" src="https://cdn-icons-png.flaticon.com/512/2951/2951226.png" alt=""></span></button>
+           <div id="discount">
+           <input type="text" name="" placeholder="Enter discount code" id="coupon">
+           <button>APPLY DISCOUNT</button>
+           </div>
+            
+            <!-- here -->
+            <a href="checkout.html" >
+                <DIV id="proceed_btn" >
+                    <button id="proceedPayment">PROCEED TO CHECKOUT</button>
+                </DIV>
+            </a>
+           
+            
+
+      
+        
+           
+
+
+
+</div>
+</div>
+
+  
+
+
+
+
+
+
+
+    <div id="footer">
+
+
+    </div>
+    
+</body>
+<script type="module" src="./Scripts/addcart.js"></script>
+</html>
