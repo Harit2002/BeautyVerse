@@ -1,98 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BeautVerse</title>
-    <link rel="stylesheet" href="">
-    <link  rel="icon" type="image/x-icon" href="" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
+  </head>
+  <body>
     <div id="navbar">
-        <img src="" alt="">
-        <div id="username"></div>
+      <img src="../images/BeautyVerse.png" alt="" />
+      <div id="username">
+        <button id="name">
+          <h3><i class="fa-solid fa-user"></i></h3>
+        </button>
+
+        <div id="login">
+          <ul>
+            <li class="red"><h4>Logout</h4></li>
+            <li><h4>Settings</h4></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div id="dashboard">
-        <!--Left side navbar-->
-        <div id="LeftSideBar">
+      <!--Left side navbar-->
+      <div id="LeftSideBar">
+        <div id="category">Dashboard <i class="fa-solid fa-shop"></i></div>
+        <div id="prduct">
+          Add Product <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div id="order">Manage Order <i class="fa-solid fa-users"></i></div>
+        <div id="payment">
+          Manage Payment <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+        <div id="feedback">Check Feedback</div>
+      </div>
 
-            <div id="category">Add Category</div>
-            <div id="prduct">Add Product</div>
-            <div id="order">Manage Order</div>
-            <div id="payment">Manage Payment</div>
-            <div id="feedback">Check Feedback</div>
-
+      <!--Right side main section-->
+      <div id="RightSideBar">
+        <div class="heading">
+          <h3>Dashboard</h3>
         </div>
 
-        <!--Right side main section-->
-        <div id="RightSideBar">
-
-            <div class="heading">
-                <h3>Dashboard</h3>
+        <div class="info">
+          <div class="cards">
+            <div>
+              <p>ORDER PENDING</p>
+              <div id="pending"></div>
+              <i class="fa-solid fa-circle-exclamation"></i>
             </div>
-
-            <div class="info">
-
-                <div class="cards">
-                    <div>
-                        <p>ORDER PENDING</p>
-                        <div id="pending"></div>
-                    </div>
-                    
-                </div>
-                <div class="cards">
-                    <div>
-                        <p>ORDER CANCEL</p>
-                        <div id="cancel"></div>
-                    </div>
-                    
-                </div>
-
-                <div class="cards">
-                    <div>
-                        <p>ORDER PROCESS</p>
-                        <div id="process"></div>
-                    </div>
-                    
-                </div>
-
-                <div class="cards">
-                    <div>
-                        <p>ORDER SUCCESSFUL</p>
-                        <div id="successful"></div>
-                    </div>
-                    
-                </div>
-
-
+          </div>
+          <div class="cards">
+            <div>
+              <p>ORDER CANCEL</p>
+              <div id="cancel"></div>
             </div>
+            <i class="fa-solid fa-circle-xmark"></i>
+          </div>
 
-            <div id="recentOrders">
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Order ID</th>
-                            <th>Payment Method</th>
-                            <th>Order Date</th>
-                            <th>Delivery Date </th>
-                            <th>Status</th>
-                            <th>Total</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-
-                    </tbody>
-                </table>
-
+          <div class="cards">
+            <div>
+              <p>ORDER PROCESS</p>
+              <div id="process"></div>
             </div>
+            <i class="fa-solid fa-recycle"></i>
+          </div>
 
+          <div class="cards">
+            <div>
+              <p>ORDER SUCCESSFUL</p>
+              <div id="successful"></div>
+            </div>
+            <i class="fa-solid fa-envelope-circle-check"></i>
+          </div>
         </div>
+
+        <div id="recentOrders">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Payment Method</th>
+                <th>Order Date</th>
+                <th>Delivery Date</th>
+                <th>Status</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
     </div>
-   
-</body>
+  </body>
 </html>
+<script src="./scripts/index.js"></script>

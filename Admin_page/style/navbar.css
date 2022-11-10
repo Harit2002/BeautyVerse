@@ -1,0 +1,46 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.416);
+}
+#navbar > img {
+  height: 60px;
+}
+#username {
+  position: relative;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red {
+  color: red;
+}
+#login {
+  display: none;
+  position: absolute;
+  top: 60px;
+  line-height: 30px;
+  left: 10px;
+  padding: 6px 16px;
+  border-radius: 6px 16px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.416);
+}
+#login > ul {
+  list-style: none;
+}
+#dashboard {
+  display: flex;
+  gap: 20px;
+}
+#dashboard > #LeftSideBar > div {
+    padding: 8px 10px;
+    font-size: 18px;
+    border: 1px solid pink;
+  }
+  #dashboard > #LeftSideBar {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 20px;
+  }
