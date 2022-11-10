@@ -31,13 +31,14 @@ const navbar = () =>{
   </div>
   <div id="account">
       <button>
-          <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png"> 
+          <img style="width:10px;" src="https://cdn-icons-png.flaticon.com/512/709/709722.png"> 
         </button> 
         <h4>My Account</h4>
   </div>
   </div>
   </div>
   <div id="navbar-2">
+ 
       <select id="option" name="select">
           <option value="makeup">MAKEUP</option>
       </select>
@@ -62,11 +63,10 @@ const navbar = () =>{
       <select id="option" name="select">
           <option value="makeup">BRANDS</option>
       </select>
-      <div id="cart">
-      <button>
-          <img src="https://cdn-icons-png.flaticon.com/512/2430/2430422.png">
-      </button>
-      <h4>MY CART<span>-0.00</span></h4>
+      <div id="cart-div">
+      <img src="/shopping-bag-32.ico" alt="">
+      <span>My Cart - </span>
+      <span id="cart2">0.00</span>
   </div>
   </div>`
 }
