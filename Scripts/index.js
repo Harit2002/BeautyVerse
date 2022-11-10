@@ -1,1 +1,1 @@
-import { navbar,footer } from "./top_components.js";
+import { navbar, footer } from "./top_components.js";
