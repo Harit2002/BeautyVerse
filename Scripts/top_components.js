@@ -81,9 +81,6 @@ const navbar = () => {
     </nav>
     <div class="open-div"></div>`
 }
-
-
-
 const footer = () => {
     return `<div id="sect">
      <div id="first">
