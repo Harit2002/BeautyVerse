@@ -2,7 +2,7 @@
 function displayBrand() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "space-between";
   div.style.width = "78%";
   div.classList.add("column");
@@ -79,7 +79,7 @@ function displayAyur() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
   div.classList.remove("column");
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "space-between";
   div.style.width = "78%";
   div.style.marginRight = "150px"
@@ -162,7 +162,7 @@ function displayFrag() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
   div.classList.remove("column");
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "start";
   div.style.width = "18%";
   div.style.marginRight = "490px"
@@ -186,7 +186,7 @@ function displayFrag() {
 function displayMom() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "space-between";
   div.style.width = "78%";
   div.classList.remove("column");
@@ -252,7 +252,7 @@ function displayMom() {
 function displayPerosnal() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "space-between";
   div.style.width = "78%";
   div.classList.remove("column");
@@ -331,7 +331,7 @@ function displayPerosnal() {
 function displayHair() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "space-between";
   div.style.width = "78%";
   div.classList.remove("column");
@@ -406,7 +406,7 @@ function displayHair() {
 function displaySkins() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "space-between";
   div.style.width = "78%";
   div.classList.remove("column");
@@ -583,7 +583,7 @@ function displaySkins() {
 function displayLists() {
     let div = document.querySelector(".open-div");
   div.innerHTML = null;
-  div.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "space-between";
   div.style.width = "78%";
   div.classList.remove("column");
