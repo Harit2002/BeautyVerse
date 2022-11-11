@@ -18,10 +18,12 @@ flex: 7;
 padding: 10px 20px;
 }
 #summary{
+    flex: 3;
     text-align: left;
     border: 1px solid #ddd;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: fit-content;
 
 }
 #summary button{
@@ -86,4 +88,20 @@ margin: 10px 0px;
 }
 #continue_update_btns>a>button:hover,#proceed_btn>button:hover{
     background-color: #444;
+}
+
+#products tr{
+ border: none;
+ 
+}
+.butn{
+    padding: 6px 10px;
+    color: white;
+    background-color: #dd0285;
+    border: none;
+    margin: 5px 5px;
+}
+.butn:hover{
+    background-color: black;
+
 }

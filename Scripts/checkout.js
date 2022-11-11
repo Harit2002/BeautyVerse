@@ -1,6 +1,8 @@
 import { navbar, footer } from "./top_components.js";
 
 
+
+
 document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
 
@@ -75,21 +77,26 @@ window.onload = ()=>{
 
 
 
+
 let submit=document.getElementById("proceed")
 submit.style.backgroundColor="#dd0285"
 submit.style.color="white";
 submit.style.border="none"
 
 let form=document.getElementById("shippingform")
-let addressdata=[];
+let addressdata=JSON.parse(localStorage.getItem("addressdata"))||[];
 form.onsubmit=(el)=>{
     el.preventDefault()
 userdata()
 
 }
-
+let count=0;
 const userdata=()=>{
-    
+    if(form.firtname.value==""||form.address.value==""||form.mobile.value==""||form.pincode.value==""){
+        alert("Enter all details")
+        return;
+    }
+    count++
     let obj={
         name:form.firtname.value,
         address:form.address.value,
@@ -113,9 +120,11 @@ const userdata=()=>{
     btn.style.background="#dd0285"
     btn.style.color="white"
     btn.style.border="none"
-    
-    link.append(btn)
    
+    link.append(btn)
+   if(count==1){
     document.querySelector("#leftside").append(link)
+   }
+   
    
 }
