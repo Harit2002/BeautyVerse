@@ -38,7 +38,7 @@ input{
     height: 30px;
     border: 1px solid #ddd;
     padding: 7px;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
 }
 #AppendButtonHere{
     /* display: none; */

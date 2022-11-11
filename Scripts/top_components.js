@@ -2,7 +2,8 @@ const navbar = () => {
     return `<div id="navbar-1">
   <div id="logo">
   <a href="/-puny-corn-6420/index.html">
-  <img  alt="logo"  src="https://i.ibb.co/SvQjVHw/image.png"/>
+  <img  alt="logo"  src="https://i.ibb.co/MnjWFL0/image-1.png"/>
+  
   </a>
   </div>
   <div id="btns">
@@ -51,6 +52,8 @@ const navbar = () => {
         <div class="dropdown-content">
         <a href="/-puny-corn-6420/signin.html">Login</a>
         <a href="/-puny-corn-6420/register.html">Register</a>
+        <a href="/-puny-corn-6420/AdminSignin.html">Admin Login</a>
+        <a href="/-puny-corn-6420/AdminRegister.html">Admin Register</a>
         </div> 
         <h4>My Account</h4>
   </div>
@@ -58,30 +61,91 @@ const navbar = () => {
   </div>
   <nav id="navbar3">
         <div class="option">
-            <a href = "/-puny-corn-6420/Products Pages/makeup.html"><span id="makeup">MAKEUP</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/skin.html"><span id="skin">SKIN</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/hair.html"><span id="hair">HAIR</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/personal.html"><span id="personal">PERSONAL CARE</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/mom.html"><span id="mom">MOM & BABY CARE</span></a>
-           <a href = "/-puny-corn-6420/Products Pages/fragrance.html"> <span id="frag">FRAGRANCE</span></a>
-           <a href = "/-puny-corn-6420/Products Pages/ayurveda.html"> <span id="aurveda">AYURVEDA</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/brand.html"><span id="brand">BRAND</span></a>
+            <a id="makeup" href = "/-puny-corn-6420/Products Pages/makeup.html"><span >MAKEUP</span></a>
+            <a  id="skin" href = "/-puny-corn-6420/Products Pages/skin.html"><span>SKIN</span></a>
+            <a id="hair" href = "/-puny-corn-6420/Products Pages/hair.html"><span >HAIR</span></a>
+            <a id="personal" href = "/-puny-corn-6420/Products Pages/personal.html"><span >PERSONAL CARE</span></a>
+            <a id="mom" href = "/-puny-corn-6420/Products Pages/mom.html"><span >MOM & BABY CARE</span></a>
+           <a id="frag" href = "/-puny-corn-6420/Products Pages/fragrance.html"> <span >FRAGRANCE</span></a>
+           <a  id="aurveda" href = "/-puny-corn-6420/Products Pages/ayurveda.html"> <span>AYURVEDA</span></a>
+            <a id="brand" href = "/-puny-corn-6420/Products Pages/brand.html"><span >BRAND</span></a>
         </div>
         <div id="cart-div">
-            <a href="./addcart.html">
-            <img src="/shopping-bag-32.ico" alt="">
-            <span>My Cart - </span>
-            <span id="cart2">0.00</span>
+
+        <a href="/-puny-corn-6420/addcart.html">
+            <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
+            <span class = "span">My Cart - </span>
+            <span class = "span" id="cart2">₹0.00</span>
             </a>
-    
         </div>
-    </nav>`
+    </nav>
+    <div class="open-div"></div>`
 }
 
 
 
 const footer = () => {
-    return ``
+    return `<div id="sect">
+     <div id="first">
+     <h3 class="hdng">CONTACT INFO</h3>
+     <ul class="list">
+     <li>(+91) 7877061041</li>
+     <li>support@beautyverse.com</li>
+     <li>sales@beautyverse.com</li>
+     <li>Open time: 10:00AM - 7:00PM</li>
+     <button class="fb">
+         <img src="https://cdn-icons-png.flaticon.com/512/4628/4628653.png"> 
+     </button>
+     <button class="fb">
+         <img src="https://cdn-icons-png.flaticon.com/512/1419/1419647.png"> 
+      </button>
+ 
+ </ul>
+     </div>
+     <div id="second">
+         <h3 class="hdng">QUICK LINKS</h3>
+         <ul class="list">
+         <li>About us</li>
+         <li>Contact Us</li>
+         <li>Terms & Conditions</li>
+         <li>Privacy Policy</li>
+         <li>Return and Refund Policy</li>
+         <li>Shipping Policy</li>
+     </ul>
+     </div>
+     <div id="third">
+         <h3 class="hdng"> CUSTOMER INFO</h3>
+         <ul class="list">
+         <li>My Account</li>
+         <li>Track your Order</li>
+         <li>Order Returns</li>
+         <li>Wishlist</li>
+         <li>News & Events</li>
+         <li>FAQ</li>
+     </ul>
+     </div>
+     <div id="fourth">
+         <h3 class="hdng">CATEGORIES </h3>
+         <ul class="list">
+         <li>Makeup</li>
+         <li>Skin</li>
+         <li>Hair</li>
+         <li>Personal Care</li>
+         <li>Mom & Baby Care</li>
+         <li>Fragrance</li>
+         <li>Ayurveda</li>
+     </ul>
+     </div>
+    </div>
+    <div id="bottom">
+     <div id="paycards"> 
+     <img src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png">
+     </div>
+     <div id="newsletter">
+     <h4>Signup for Newsletter</h4>
+     <input type="text" placeholder="SignUp for Newsletter">
+     <button>Subscribe</button>
+     </div>`
 }
 
 export { navbar, footer }

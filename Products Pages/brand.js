@@ -1,18 +1,12 @@
-import { navbar, footer } from "./top_components.js";
-let nav_div = document.getElementById('navbar');
-nav_div.innerHTML = navbar();
-
-let go_to_register = document.getElementById("go_to_register");
-
-go_to_register.addEventListener("click", () => {
-    window.location.href = "./register.html"
-})
-
-document.getElementById("footer").innerHTML=footer();
-
-import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
+import { navbar,footer } from "/-puny-corn-6420/Scripts/top_components.js";
+ document.getElementById("navbar").innerHTML=navbar();
+// document.getElementById("navbar").innerHTML=footer();
 
 
+    import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
+
+
+import {showlist, showskin,showcolor,showprice,showbrand,showshades,showfom,side} from "./com/sidebar.js"
 let div = document.querySelector(".open-div");
 document.getElementById("makeup").addEventListener("mousemove", displayLists);
 document.getElementById("makeup").addEventListener("mouseout", () => {
@@ -75,3 +69,5 @@ window.onload = ()=>{
   let sum = (localStorage.getItem("paisa")) || 0;
   document.getElementById("cart2").innerText = `₹`+sum
 }
+document.getElementById("brand").style.backgroundColor = "#b7026f";
+document.getElementById("makeup").style.backgroundColor = "#dd0285";
