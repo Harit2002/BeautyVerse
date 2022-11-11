@@ -22,12 +22,19 @@ let main = document.getElementById("product-list");
 console.log(helloo)
   show(helloo)
 
+  // 
+// 
+
 function show(data){
     main.innerHTML = null;
      data[0].makeup.forEach(
         (el) =>{          
           let card = document.createElement("div");
           card.setAttribute("id", "card");
+
+          document.getElementById("makeup").style.backgroundColor = "#b7026f";
+          
+          
       
           let img = document.createElement("img");
           img.src = el.image;
@@ -79,10 +86,19 @@ function show(data){
           btnDiv.setAttribute("id", "btn-div");
       
           let button = document.createElement("button");
-          button.innerHTML = '<img src="cart-38-24.png" alt="">';
-          // button.addEventListener("click", function () {
-          //   addel(elem);
-          // });
+          // button.innerHTML = '<img src="cart-38-24.png" alt="">';
+          button.addEventListener("click", addMoney);
+          function addMoney(){
+            let store = (localStorage.getItem("paisa")) || 0;
+            let sum = eval(Number(el.price)+(Number(store)))
+            localStorage.setItem("paisa",(sum))
+
+            document.getElementById("cart2").innerText = `₹`+sum
+          }
+          window.onload = ()=>{
+            let sum = (localStorage.getItem("paisa")) || 0;
+            document.getElementById("cart2").innerText = `₹`+sum
+          }
           let spanBtn = document.createElement("span");
           spanBtn.innerText = "Add To Cart";
           button.append(spanBtn);
@@ -95,7 +111,13 @@ function show(data){
           btnDiv.append(button, spanfav);
           info.append(title, rating, priceDiv, btnDiv);
           card.append(img, sale, info);
+          let cartArr = JSON.parse(localStorage.getItem("items")) || []
+          card.onclick =()=>{
+            cartArr.push(el)
+            localStorage.setItem("cartdata", JSON.stringify(cartArr))
+          }
           main.append(card);
+
 
         
         }
@@ -207,6 +229,8 @@ document.getElementById("brand").addEventListener("mouseout", () => {
   div.style.boxShadow = "none";
   div.innerHTML = null;
 });
+
+
 
         
 

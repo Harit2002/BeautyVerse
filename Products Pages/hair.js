@@ -141,6 +141,18 @@ function show(data){
           // button.addEventListener("click", function () {
           //   addel(elem);
           // });
+          button.addEventListener("click", addMoney);
+          function addMoney(){
+            let store = (localStorage.getItem("paisa")) || 0;
+            let sum = eval(Number(el.price)+(Number(store)))
+            localStorage.setItem("paisa",(sum))
+
+            document.getElementById("cart2").innerText = `₹`+sum
+          }
+          window.onload = ()=>{
+            let sum = (localStorage.getItem("paisa")) || 0;
+            document.getElementById("cart2").innerText = `₹`+sum
+          }
           let spanBtn = document.createElement("span");
           spanBtn.innerText = "Add To Cart";
           button.append(spanBtn);
@@ -153,6 +165,13 @@ function show(data){
           btnDiv.append(button, spanfav);
           info.append(title, rating, priceDiv, btnDiv);
           card.append(img, sale, info);
+          let cartArr = JSON.parse(localStorage.getItem("items")) || []
+          card.onclick =()=>{
+            cartArr.push(el)
+            localStorage.setItem("cartdata", JSON.stringify(cartArr))
+          }
+          document.getElementById("hair").style.backgroundColor = "#b7026f";
+          document.getElementById("makeup").style.backgroundColor = "#dd0285";
           main.append(card);
 
         
