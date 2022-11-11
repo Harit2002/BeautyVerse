@@ -80,6 +80,7 @@
 #shippingform>input{
     width: 97%;
     padding: 10px;
+    margin: 10px 0px;
 }
 #shippingform>select{
     width: 100%;
@@ -91,4 +92,7 @@ h1{
 }
 #checkbox{
     margin-right: 20px;
+}
+hr{
+    margin: 10px 0px;
 }

@@ -1,5 +1,6 @@
 
-
+import {navbar,footer} from './top_components.js'
+document.getElementById("navbar").innerHTML=navbar();
 
 
 let debit=document.getElementById("debit_credit")
@@ -30,3 +31,24 @@ document.getElementById("proceedcash").onclick=()=>{
         alert("Payment successful")
     }
 }
+document.getElementById("proceeddebit").onclick=()=>{
+    let card=document.getElementById("cardNumber").value;
+    let exp=document.getElementById("Expiry").value;
+    let cvv=document.getElementById("cvv").value;
+
+
+    if(card==""||card.length!=16||exp==""||cvv==""){
+alert("Enter all card details")
+    }else{
+        window.prompt
+        const Enter_otp = prompt( `Enter new otp sent to your registered number`)
+        alert("Payment successful")
+        
+    }
+}
+let data=JSON.parse(localStorage.getItem("addressdata"))
+
+document.getElementById("name").innerText=data[data.length-1].name;
+document.getElementById("address").innerText=data[data.length-1].address;
+document.getElementById("city").innerText=data[data.length-1].city;
+document.getElementById("pin").innerText=data[data.length-1].pin;
