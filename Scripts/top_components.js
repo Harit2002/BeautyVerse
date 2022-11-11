@@ -2,7 +2,8 @@ const navbar = () => {
     return `<div id="navbar-1">
   <div id="logo">
   <a href="/-puny-corn-6420/index.html">
-  <img  alt="logo"  src="https://i.ibb.co/SvQjVHw/image.png"/>
+  <img  alt="logo"  src="https://i.ibb.co/MnjWFL0/image-1.png"/>
+  
   </a>
   </div>
   <div id="btns">
@@ -51,6 +52,8 @@ const navbar = () => {
         <div class="dropdown-content">
         <a href="/-puny-corn-6420/signin.html">Login</a>
         <a href="/-puny-corn-6420/register.html">Register</a>
+        <a href="/-puny-corn-6420/AdminSignin.html">Admin Login</a>
+        <a href="/-puny-corn-6420/AdminRegister.html">Admin Register</a>
         </div> 
         <h4>My Account</h4>
   </div>
@@ -58,24 +61,25 @@ const navbar = () => {
   </div>
   <nav id="navbar3">
         <div class="option">
-            <a href = "/-puny-corn-6420/Products Pages/makeup.html"><span id="makeup">MAKEUP</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/skin.html"><span id="skin">SKIN</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/hair.html"><span id="hair">HAIR</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/personal.html"><span id="personal">PERSONAL CARE</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/mom.html"><span id="mom">MOM & BABY CARE</span></a>
-           <a href = "/-puny-corn-6420/Products Pages/fragrance.html"> <span id="frag">FRAGRANCE</span></a>
-           <a href = "/-puny-corn-6420/Products Pages/ayurveda.html"> <span id="aurveda">AYURVEDA</span></a>
-            <a href = "/-puny-corn-6420/Products Pages/brand.html"><span id="brand">BRAND</span></a>
+            <a id="makeup" href = "/-puny-corn-6420/Products Pages/makeup.html"><span >MAKEUP</span></a>
+            <a  id="skin" href = "/-puny-corn-6420/Products Pages/skin.html"><span>SKIN</span></a>
+            <a id="hair" href = "/-puny-corn-6420/Products Pages/hair.html"><span >HAIR</span></a>
+            <a id="personal" href = "/-puny-corn-6420/Products Pages/personal.html"><span >PERSONAL CARE</span></a>
+            <a id="mom" href = "/-puny-corn-6420/Products Pages/mom.html"><span >MOM & BABY CARE</span></a>
+           <a id="frag" href = "/-puny-corn-6420/Products Pages/fragrance.html"> <span >FRAGRANCE</span></a>
+           <a  id="aurveda" href = "/-puny-corn-6420/Products Pages/ayurveda.html"> <span>AYURVEDA</span></a>
+            <a id="brand" href = "/-puny-corn-6420/Products Pages/brand.html"><span >BRAND</span></a>
         </div>
         <div id="cart-div">
+
         <a href="./addcart.html">
-            <img src="https://cdn-icons-png.flaticon.com/512/2430/2430422.png" alt=""></a>
-            <span>My Cart - </span>
-            <span id="cart2">0.00</span>
+            <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
+            <span class = "span">My Cart - </span>
+            <span class = "span" id="cart2">0.00</span>
             </a>
-    
         </div>
-    </nav>`
+    </nav>
+    <div class="open-div"></div>`
 }
 
 
