@@ -75,7 +75,6 @@ const navbar = () => {
             <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
             <span class = "span">My Cart - </span>
             <span class = "span" id="cart2">0.00</span>
-
             </a>
         </div>
     </nav>
