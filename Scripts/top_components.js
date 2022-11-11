@@ -68,8 +68,8 @@ const navbar = () => {
             <a href = "/-puny-corn-6420/Products Pages/brand.html"><span id="brand">BRAND</span></a>
         </div>
         <div id="cart-div">
-            <a href="./addcart.html">
-            <img src="/shopping-bag-32.ico" alt="">
+        <a href="./addcart.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/2430/2430422.png" alt=""></a>
             <span>My Cart - </span>
             <span id="cart2">0.00</span>
             </a>
@@ -81,7 +81,67 @@ const navbar = () => {
 
 
 const footer = () => {
-    return ``
+    return `<div id="sect">
+     <div id="first">
+     <h3 class="hdng">CONTACT INFO</h3>
+     <ul class="list">
+     <li>(+91) 7877061041</li>
+     <li>support@beautyverse.com</li>
+     <li>sales@beautyverse.com</li>
+     <li>Open time: 10:00AM - 7:00PM</li>
+     <button class="fb">
+         <img src="https://cdn-icons-png.flaticon.com/512/4628/4628653.png"> 
+     </button>
+     <button class="fb">
+         <img src="https://cdn-icons-png.flaticon.com/512/1419/1419647.png"> 
+      </button>
+ 
+ </ul>
+     </div>
+     <div id="second">
+         <h3 class="hdng">QUICK LINKS</h3>
+         <ul class="list">
+         <li>About us</li>
+         <li>Contact Us</li>
+         <li>Terms & Conditions</li>
+         <li>Privacy Policy</li>
+         <li>Return and Refund Policy</li>
+         <li>Shipping Policy</li>
+     </ul>
+     </div>
+     <div id="third">
+         <h3 class="hdng"> CUSTOMER INFO</h3>
+         <ul class="list">
+         <li>My Account</li>
+         <li>Track your Order</li>
+         <li>Order Returns</li>
+         <li>Wishlist</li>
+         <li>News & Events</li>
+         <li>FAQ</li>
+     </ul>
+     </div>
+     <div id="fourth">
+         <h3 class="hdng">CATEGORIES </h3>
+         <ul class="list">
+         <li>Makeup</li>
+         <li>Skin</li>
+         <li>Hair</li>
+         <li>Personal Care</li>
+         <li>Mom & Baby Care</li>
+         <li>Fragrance</li>
+         <li>Ayurveda</li>
+     </ul>
+     </div>
+    </div>
+    <div id="bottom">
+     <div id="paycards"> 
+     <img src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png">
+     </div>
+     <div id="newsletter">
+     <h4>Signup for Newsletter</h4>
+     <input type="text" placeholder="SignUp for Newsletter">
+     <button>Subscribe</button>
+     </div>`
 }
 
 export { navbar, footer }

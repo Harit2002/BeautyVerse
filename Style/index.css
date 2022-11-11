@@ -216,7 +216,7 @@
     font-weight: bolder;
 }
 #cart-div{
-    padding: 15px 29px;
+    padding: 13px 29px;
 }
 
 .option>a:nth-child(1),#cart-div{
@@ -227,14 +227,9 @@
     cursor: pointer;
     background-color: #b7026f;
 }
-
-
-
-
-
-#cart{
+#cart-div{
 width: 13%;
-height: 40px;
+height: 18px;
 margin: 15px 15px 15px 0px; 
 align-items: center;
 display: flex;
@@ -243,18 +238,114 @@ font-size: 18px;
 text-align: center;
 border: 0px solid black;
 }
-#cart>button{
-    height: 40px;
+#cart-div>a{
+    height: 16px;
     align-items: center;
     text-align: center;
-    width: 25%;
-    padding: 10px;
+    width: 20%;
+    padding: 20px;
     background: none;
     border: none;
 }
-#cart>button>img{
+#cart-div>a>img{
+    width: 80%;
+}
+#footer{
+    width: 100%;
+    height:350px;
+    margin: auto;
+    border: 0px solid black;
+    background-color: black;
+}
+#sect{
+    width: 85%;
+    height:280px;
+    border-bottom: 1px solid white;
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    margin-top: 0px;
+}
+ul>li{
+    padding: 5px;
+    margin: 3px 5px 1px 5px;
+    font-size: 16px;
+}
+ul>li:hover{
+    color: #dd0285;
+}
+.list{
+    list-style: none;
+    padding: 5px;
+    margin: 3px 5px 1px 5px;
+}
+.hdng{
+    padding: 5px;
+    margin: 3px 5px 1px 5px;
+    font-size: 20px;
+    
+   
+}
+.fb{
+    width: 18%;
+    height: 50px;
+    background-color: white;
+}
+.fb>img{
     width: 100%;
 }
+.fb>img:hover{
+    background-color: #dd0285;
+}
+#bottom{
+    width: 85%;
+    height:50px;
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    margin-top: 0px;
+    margin: auto;
+    border: 0px solid white;
+    background-color: black;
+}
+#paycards{
+    width: 30%;
+    height:50px;
+    display: flex; 
+    border: 0px solid white;
+    background-color: black;
+}
+#paycards>img{
+    width: 100%;
+}
+#newsletter{
+    width: 50%;
+    height:50px;
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-left: 18%;
+    border: 0px solid white;
+    background-color: black;
+}
+#newsletter>h4{
+    padding: 10px 15px;
+}
+#newsletter>input{
+   width: 50%;
+   margin-top: 5px;
+   text-align: center;
+}
+#newsletter>button{
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #dd0285;
+    color: white;
+}
+
+
+
+
 
 
 
