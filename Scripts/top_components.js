@@ -71,19 +71,15 @@ const navbar = () => {
             <a id="brand" href = "/-puny-corn-6420/Products Pages/brand.html"><span >BRAND</span></a>
         </div>
         <div id="cart-div">
-
         <a href="./addcart.html">
             <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
             <span class = "span">My Cart - </span>
-            <span class = "span" id="cart2">₹0.00</span>
+            <span class = "span" id="cart2">0.00</span>
             </a>
         </div>
     </nav>
     <div class="open-div"></div>`
 }
-
-
-
 const footer = () => {
     return `<div id="sect">
      <div id="first">

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment</title>
     <link rel="stylesheet" href="./Style/payment.css">
+    <link rel="stylesheet" href="./Style/index.css">
 </head>
 <body>
     <div id="navbar">
@@ -50,10 +51,10 @@
                
                 <input type="tel" maxlength="4" placeholder="Enter your cvv" name="" id="cvv">
                 <p>Name</p>
-                <input type="text" placeholder="Enter your name" name="" id="name">
+                <input type="text" placeholder="Enter your name" name="" id="naam">
                
                 <p> <input type="checkbox" name="" id=""> Secure this option for faster checkouts</p>
-                <button>PROCEED</button>
+                <button id="proceeddebit">PROCEED</button>
 
 
             </div>
@@ -63,7 +64,41 @@
     </div>
 
     <div id="right">
+<div>
+    <h2>Order Summary</h2>
+    <hr>
+   <pre>Sub Total:            <span id="subtotal"><img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/5889/5889989.png" alt="">0.00</span></pre>
+   <pre>Shipping Charges:     <span><img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/5889/5889989.png" alt="">50.00</span></pre>
+   <pre>Gst:                  <span><img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/5889/5889989.png" alt="">12.00</span></pre>
+   <hr>
+   <pre>Total Incl.GST:       <span id="total"><img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/5889/5889989.png" alt="">0.00</span></pre>
+      
 
+</div>
+
+
+
+<div >
+
+    <h2>Ship To</h2>
+    <hr>
+    <p id="name">Name</p>
+    <p id="address">Address</p>
+    <p id="city">City</p>
+    <p id="pin">Pincode</p>
+
+</div>
+
+
+
+
+
+<div>
+    <h>SHIPPING METHOD</h2>
+        <hr>
+        <p>Best Way-Max 7 Business days</p>
+
+</div>
 
     </div>
 
@@ -73,9 +108,12 @@
    
 </div>
 
+<div id="footer"></div>
+
    
 
     
 </body>
-<script type="module" src="./Scripts/payment.js"></script>
 </html>
+<script type="module" src="./Scripts/payment.js"></script>
+<script type="module" src="/-puny-corn-6420/Scripts/dropdown.js"></script>
