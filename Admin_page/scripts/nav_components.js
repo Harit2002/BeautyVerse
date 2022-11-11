@@ -15,8 +15,8 @@ const navbar = () =>{
 }
 
 const leftSideNavbar = () =>{
-    return ` <div id="category">Dashboard <i class="fa-solid fa-shop"></i></div>
-    <div id="prduct">
+    return ` <div id="home">Dashboard <i class="fa-solid fa-shop"></i></div>
+    <div id="product">
       Add Product <i class="fa-solid fa-cart-shopping"></i>
     </div>
     <div id="order">Manage Order <i class="fa-solid fa-users"></i></div>

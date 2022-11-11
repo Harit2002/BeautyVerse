@@ -17,14 +17,15 @@ name.addEventListener("click", () => {
 
   console.log(div);
 });
-let home_div = document.getElementById('home');
-home_div.style.backgroundColor = "rgb(194, 0, 187)";
-
 
 let product_div = document.getElementById('product');
-product_div.onclick = () =>{
-  window.location.href = "products.html"
-}
+product_div.style.backgroundColor = "rgb(194, 0, 187)";
+
+let home_div = document.getElementById('home');
+home_div.onclick = () =>{
+    window.location.href = "index.html"
+  }
+
 let order_div = document.getElementById('order');
 order_div.onclick = () =>{
   window.location.href = "orderPage.html"
