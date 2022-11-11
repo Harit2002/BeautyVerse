@@ -1,3 +1,8 @@
+import { navbar, footer } from "./top_components.js";
+let nav_div = document.getElementById('navbar');
+nav_div.innerHTML = navbar();
+
+
 let lsdata = JSON.parse(localStorage.getItem("personal_data"));
 
 let form = document.getElementById("form");

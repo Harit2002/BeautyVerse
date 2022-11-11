@@ -22,9 +22,11 @@ let main = document.getElementById("product-list");
 console.log(helloo)
   show(helloo)
 
+  
+
 function show(data){
     main.innerHTML = null;
-     data[0].makeup.forEach(
+     data[0].skin.forEach(
         (el) =>{          
           let card = document.createElement("div");
           card.setAttribute("id", "card");
@@ -95,6 +97,7 @@ function show(data){
           btnDiv.append(button, spanfav);
           info.append(title, rating, priceDiv, btnDiv);
           card.append(img, sale, info);
+          
           main.append(card);
 
         
@@ -106,7 +109,7 @@ document.getElementById("sort").addEventListener("change", function(){
                      
   let value = document.getElementById("sort").value;
     if (value === "htl") {
-      helloo[0].makeup.sort((a, b) => {
+      helloo[0].skin.sort((a, b) => {
         return +b.price - Number(a.price);
       });
 
@@ -114,7 +117,7 @@ document.getElementById("sort").addEventListener("change", function(){
     }
 
     if (value === "lth") {
-      helloo[0].makeup.sort((a, b) => {
+      helloo[0].skin.sort((a, b) => {
         return +a.price - Number(b.price);
       });
 
@@ -122,8 +125,8 @@ document.getElementById("sort").addEventListener("change", function(){
     }
     if (value === "productName") {
      
-      helloo[0].makeup.reverse();
-      helloo[0].makeup.sort((a, b) => {
+      helloo[0].skin.reverse();
+      helloo[0].skin.sort((a, b) => {
           return a.title - b.title- b.title;
         }
       );
@@ -131,8 +134,8 @@ document.getElementById("sort").addEventListener("change", function(){
     }
     if (value === "position") {
      
-      helloo[0].makeup.reverse();
-      helloo[0].makeup.sort((a, b) => {
+      helloo[0].skin.reverse();
+      helloo[0].skin.sort((a, b) => {
           return a.title - b.title- b.title-a.title;
         }
       );
@@ -140,28 +143,11 @@ document.getElementById("sort").addEventListener("change", function(){
     }
     if (value === "newArrival") {
      
-      helloo[0].makeup.reverse();
-      helloo[0].makeup.sort((a, b) => {
+      helloo[0].skin.reverse();
+      helloo[0].skin.sort((a, b) => {
           return a.title - a.title;
         }
       );
       show(helloo);
     }
 });
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
