@@ -133,9 +133,11 @@ function showlist() {
     div.innerHTML = null;
   
     if (count3 % 2 === 0) {
+      
       document.querySelector("#color>p>span").innerHTML = "+";
       div.innerHTML = null;
     } else {
+      document.querySelector("#color>p>span").innerHTML = "-";
         let flied = document.createElement("fieldset");
     let div1 = document.createElement("div");
     div1.style.width = "20px";
@@ -519,6 +521,7 @@ function showprice() {
       document.querySelector("#shds>p>span").innerHTML = "+";
       div.innerHTML = null;
     } else {
+      document.querySelector("#shds>p>span").innerHTML = "-";
         let flied = document.createElement("fieldset");
     let div1 = document.createElement("div");
     div1.style.width = "20px";

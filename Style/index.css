@@ -8,12 +8,12 @@
     padding: 0px;
 }
 
-#top-img {
+/* #top-img {
     width: 98%;
     height: auto;
     margin: auto;
     border: 0px solid black;
-}
+} */
 
 #navbar-1 {
     display: flex;
@@ -22,6 +22,8 @@
     height: 100px;
     margin: auto;
     border: 0px solid black;
+    /* display: block; */
+    /* position: absolute; */
 }
 
 #logo {
@@ -97,14 +99,15 @@
     align-items: center;
     text-align: center;
     border: none;
-    width: 100%;
+    width: 80%;
     margin-top: 2px;
+    margin-left: -2px;
     padding: 15px;
     background-color:  #dd0285;
 } 
 #srch-btn>button>img{
-    width: 60%;
-    margin-top: -6px;
+    width: 85%;
+    margin-top: -2px;
 }
 #wish{
     width: 16%;
@@ -123,9 +126,9 @@
     background: none;
 } 
 #wish>button>img{
-    width: 90%;
+    width: 80%;
     margin-top: -7px;
-    margin-left: -10px;
+    margin-left: -15px;
 }
 #wish:hover{
     background-color:    #dd0285;
@@ -171,7 +174,7 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 120px;
+  margin-top: 205px;
   text-align: left;
 }
 
@@ -183,7 +186,9 @@
  
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;

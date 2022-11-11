@@ -11,86 +11,81 @@ container.innerHTML = side()
     let brand = document.getElementById("brnd").addEventListener("click", showbrand);
     let shades = document.getElementById("shds").addEventListener("click", showshades);
     let fomulation = document.getElementById("forml").addEventListener("click", showfom);
+
     import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
 
-    let div = document.querySelector(".open-div");
-    document.getElementById("makeup").addEventListener("mousemove", displayLists);
-    document.getElementById("makeup").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
-    
-    
-    // for skins
-    document.getElementById("skin").addEventListener("mousemove", displaySkins);
-    document.getElementById("skin").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
-    
-    // for hair
-    document.getElementById("hair").addEventListener("mousemove", displayHair);
-    document.getElementById("hair").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
-    
-    // for personal care
-    document
-      .getElementById("personal")
-      .addEventListener("mousemove", displayPerosnal);
-    document.getElementById("personal").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
-    
-    // for mom care
-    document.getElementById("mom").addEventListener("mousemove", displayMom);
-    document.getElementById("mom").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
-    
-    // for fragnance
-    document.getElementById("frag").addEventListener("mousemove", displayFrag);
-    document.getElementById("frag").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
-    
-    // for ayurveda
-    document.getElementById("aurveda").addEventListener("mousemove", displayAyur);
-    document.getElementById("aurveda").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
-    
-    // for brand
-    document.getElementById("brand").addEventListener("mousemove", displayBrand);
-    document.getElementById("brand").addEventListener("mouseout", () => {
-      div.style.boxShadow = "none";
-      div.innerHTML = null;
-    });
 
 import {showlist, showskin,showcolor,showprice,showbrand,showshades,showfom,side} from "./com/sidebar.js"
+let div = document.querySelector(".open-div");
+document.getElementById("makeup").addEventListener("mousemove", displayLists);
+document.getElementById("makeup").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
 
+
+// for skins
+document.getElementById("skin").addEventListener("mousemove", displaySkins);
+document.getElementById("skin").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
+
+// for hair
+document.getElementById("hair").addEventListener("mousemove", displayHair);
+document.getElementById("hair").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
+
+// for personal care
+document
+  .getElementById("personal")
+  .addEventListener("mousemove", displayPerosnal);
+document.getElementById("personal").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
+
+// for mom care
+document.getElementById("mom").addEventListener("mousemove", displayMom);
+document.getElementById("mom").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
+
+// for fragnance
+document.getElementById("frag").addEventListener("mousemove", displayFrag);
+document.getElementById("frag").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
+
+// for ayurveda
+document.getElementById("aurveda").addEventListener("mousemove", displayAyur);
+document.getElementById("aurveda").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
+
+// for brand
+document.getElementById("brand").addEventListener("mousemove", displayBrand);
+document.getElementById("brand").addEventListener("mouseout", () => {
+  div.style.boxShadow = "none";
+  div.innerHTML = null;
+});
 
 let main = document.getElementById("product-list");
   let helloo = JSON.parse(localStorage.getItem("j")) || []
 console.log(helloo)
   show(helloo)
 
-  
-
 function show(data){
     main.innerHTML = null;
-     data[0].skin.forEach(
+     data[0].kids.forEach(
         (el) =>{          
           let card = document.createElement("div");
           card.setAttribute("id", "card");
-
-          document.getElementById("skin").style.backgroundColor = "#b7026f";
-          document.getElementById("makeup").style.backgroundColor = "#dd0285";
       
           let img = document.createElement("img");
           img.src = el.image;
@@ -158,7 +153,6 @@ function show(data){
             let sum = (localStorage.getItem("paisa")) || 0;
             document.getElementById("cart2").innerText = `₹`+sum
           }
-
           let spanBtn = document.createElement("span");
           spanBtn.innerText = "Add To Cart";
           button.append(spanBtn);
@@ -176,7 +170,8 @@ function show(data){
             cartArr.push(el)
             localStorage.setItem("cartdata", JSON.stringify(cartArr))
           }
-          
+          document.getElementById("mom").style.backgroundColor = "#b7026f";
+          document.getElementById("makeup").style.backgroundColor = "#dd0285";
           main.append(card);
 
         
@@ -188,7 +183,7 @@ document.getElementById("sort").addEventListener("change", function(){
                      
   let value = document.getElementById("sort").value;
     if (value === "htl") {
-      helloo[0].skin.sort((a, b) => {
+      helloo[0].kids.sort((a, b) => {
         return +b.price - Number(a.price);
       });
 
@@ -196,7 +191,7 @@ document.getElementById("sort").addEventListener("change", function(){
     }
 
     if (value === "lth") {
-      helloo[0].skin.sort((a, b) => {
+      helloo[0].kids.sort((a, b) => {
         return +a.price - Number(b.price);
       });
 
@@ -204,8 +199,8 @@ document.getElementById("sort").addEventListener("change", function(){
     }
     if (value === "productName") {
      
-      helloo[0].skin.reverse();
-      helloo[0].skin.sort((a, b) => {
+      helloo[0].kids.reverse();
+      helloo[0].kids.sort((a, b) => {
           return a.title - b.title- b.title;
         }
       );
@@ -213,8 +208,8 @@ document.getElementById("sort").addEventListener("change", function(){
     }
     if (value === "position") {
      
-      helloo[0].skin.reverse();
-      helloo[0].skin.sort((a, b) => {
+      helloo[0].kids.reverse();
+      helloo[0].kids.sort((a, b) => {
           return a.title - b.title- b.title-a.title;
         }
       );
@@ -222,8 +217,8 @@ document.getElementById("sort").addEventListener("change", function(){
     }
     if (value === "newArrival") {
      
-      helloo[0].skin.reverse();
-      helloo[0].skin.sort((a, b) => {
+      helloo[0].kids.reverse();
+      helloo[0].kids.sort((a, b) => {
           return a.title - a.title;
         }
       );
