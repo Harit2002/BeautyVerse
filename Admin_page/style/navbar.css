@@ -1,4 +1,5 @@
 #navbar {
+  /* margin-bottom: 10px; */
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(128, 128, 128, 0.416);
@@ -31,16 +32,43 @@
   list-style: none;
 }
 #dashboard {
+  background-color: rgb(254, 240, 240);
+  border-radius: 10px;
+  padding: 24px 20px;
+  /* width: 96%; */
+  margin: auto;
   display: flex;
   gap: 20px;
 }
 #dashboard > #LeftSideBar > div {
-    padding: 8px 10px;
+    padding: 12px;
     font-size: 18px;
-    border: 1px solid pink;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 0.5px solid pink;
+  }
+  #dashboard > #LeftSideBar > div:hover{
+    background-color: rgb(194, 0, 187);
   }
   #dashboard > #LeftSideBar {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: rgba(247, 59, 181, 0.995);
     border-radius: 10px;
     padding: 20px;
+  }
+  #username i{
+    font-size: 26px;
+  }
+  #username button{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #username #name:hover{
+    background-color: rgba(220, 219, 219, 0.592);
+  }
+  #login i{
+    font-size: 18px;
   }

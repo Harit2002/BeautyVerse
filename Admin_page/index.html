@@ -18,33 +18,13 @@
   </head>
   <body>
     <div id="navbar">
-      <img src="../images/BeautyVerse.png" alt="" />
-      <div id="username">
-        <button id="name">
-          <h3><i class="fa-solid fa-user"></i></h3>
-        </button>
-
-        <div id="login">
-          <ul>
-            <li class="red"><h4>Logout</h4></li>
-            <li><h4>Settings</h4></li>
-          </ul>
-        </div>
-      </div>
+     
     </div>
 
     <div id="dashboard">
       <!--Left side navbar-->
       <div id="LeftSideBar">
-        <div id="category">Dashboard <i class="fa-solid fa-shop"></i></div>
-        <div id="prduct">
-          Add Product <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-        <div id="order">Manage Order <i class="fa-solid fa-users"></i></div>
-        <div id="payment">
-          Manage Payment <i class="fa-solid fa-money-check-dollar"></i>
-        </div>
-        <div id="feedback">Check Feedback</div>
+       
       </div>
 
       <!--Right side main section-->
@@ -54,40 +34,40 @@
         </div>
 
         <div class="info">
-          <div class="cards">
+          <div class="cards v">
             <div>
               <p>ORDER PENDING</p>
-              <div id="pending"></div>
-              <i class="fa-solid fa-circle-exclamation"></i>
+              <div id="pending">0</div>
             </div>
+            <i class="fa-solid fa-circle-exclamation"></i>
           </div>
-          <div class="cards">
+          <div class="cards r">
             <div>
               <p>ORDER CANCEL</p>
-              <div id="cancel"></div>
+              <div id="cancel">0</div>
             </div>
             <i class="fa-solid fa-circle-xmark"></i>
           </div>
 
-          <div class="cards">
+          <div class="cards b">
             <div>
               <p>ORDER PROCESS</p>
-              <div id="process"></div>
+              <div id="process">10</div>
             </div>
             <i class="fa-solid fa-recycle"></i>
           </div>
 
-          <div class="cards">
+          <div class="cards g">
             <div>
               <p>ORDER SUCCESSFUL</p>
-              <div id="successful"></div>
+              <div id="successful">0</div>
             </div>
             <i class="fa-solid fa-envelope-circle-check"></i>
           </div>
         </div>
 
         <div id="recentOrders">
-          <table border="1">
+          <table border="1" cellpadding="11" cellspacing="10">
             <thead>
               <tr>
                 <th>Order ID</th>
@@ -100,11 +80,21 @@
               </tr>
             </thead>
 
-            <tbody></tbody>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
     </div>
   </body>
 </html>
-<script src="./scripts/index.js"></script>
+<script type='module' src="./scripts/index.js"></script>
