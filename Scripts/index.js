@@ -2,6 +2,7 @@ import { navbar, footer } from "./top_components.js";
 
 
 document.getElementById("navbar").innerHTML=navbar();
+document.getElementById("footer").innerHTML=footer();
 
 import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
 
