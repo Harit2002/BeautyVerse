@@ -65,6 +65,10 @@ document.getElementById("brand").addEventListener("mouseout", () => {
   div.style.boxShadow = "none";
   div.innerHTML = null;
 });
+window.onload = ()=>{
+  let sum = (localStorage.getItem("paisa")) || 0;
+  document.getElementById("cart2").innerText = `₹`+sum
+}
 
 
 

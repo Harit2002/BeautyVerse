@@ -72,7 +72,7 @@ const navbar = () => {
         </div>
         <div id="cart-div">
 
-        <a href="./addcart.html">
+        <a href="/-puny-corn-6420/addcart.html">
             <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
             <span class = "span">My Cart - </span>
             <span class = "span" id="cart2">₹0.00</span>
