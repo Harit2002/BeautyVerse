@@ -375,8 +375,6 @@ ul>li:hover{
     padding: 5px;
     margin: 3px 5px 1px 5px;
     font-size: 20px;
-    
-   
 }
 .fb{
     width: 18%;
@@ -433,14 +431,74 @@ ul>li:hover{
     background-color: #dd0285;
     color: white;
 }
+#carousel_div{
+    width: 80%;
+    height: 433px;
+    border: 0px solid black;
+    display: grid;
+    /* color: white; */
+    grid-template-columns: 25% 1fr;
+    margin: auto;
+    margin-top: 10px;
+}
+#menu-sec{
+    border: 0px solid black;
+    margin-top: 10px;
+   /* display: flex; */
+   padding:10px;
+}
+#cat-option{
+    display: flex;
+    border: 0px solid black;
 
+}
+#cat-option>h3{
+    font-size: 17px;
+    text-align: center;
+    padding: 5px 0px 5px 20px ;
+}
+ #cat-option>img{
+    width: 7%;
+    height: 20px;
+      margin: 5px;  
+} 
+#list-items{
+width:70%;
+display: flex;
+}
+.side-sec{
+    margin-left: 0px;
+}
+.side-sec>li{
+list-style: none;
+padding: 5px 0px 5px 20px ;
+margin:5px 0px 5px 5px;
+}
+#fxd-img{
+border: 0px solid black;
+margin: auto;
+/* margin-top:20px; */
+width: 80%;
+}
+#card-sec{
+border: 1px solid black;
+margin: auto;
+/* display: grid;
+grid-template-columns: repeat(4,1fr); */
+width: 83%;
+}
+#heading{
+    width: 100;
+    border: 1px solid black;
+}
+#slide-cards{
+    border: 1px solid black;
+    margin: auto;
+     display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    width: 83%;
 
-
-
-
-
-
-
+}
 .open-div{
     width: 70%;
     background-color: #ffffff;
@@ -449,9 +507,7 @@ ul>li:hover{
     display: flex;
     justify-content: space-between;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
-
 .open-div>img {
     max-height: 400px;
     margin: auto 0px;
