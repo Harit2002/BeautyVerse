@@ -1,12 +1,11 @@
 import { navbar,footer } from "/-puny-corn-6420/Scripts/top_components.js";
  document.getElementById("navbar").innerHTML=navbar();
-// document.getElementById("navbar").innerHTML=footer();
+document.getElementById("footer").innerHTML=footer();
 
 
     import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
 
 
-import {showlist, showskin,showcolor,showprice,showbrand,showshades,showfom,side} from "./com/sidebar.js"
 let div = document.querySelector(".open-div");
 document.getElementById("makeup").addEventListener("mousemove", displayLists);
 document.getElementById("makeup").addEventListener("mouseout", () => {

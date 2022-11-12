@@ -1,6 +1,6 @@
 import { navbar,footer } from "/-puny-corn-6420/Scripts/top_components.js";
  document.getElementById("navbar").innerHTML=navbar();
-// document.getElementById("navbar").innerHTML=footer();
+document.getElementById("footer").innerHTML=footer();
 let container = document.getElementById("container");
 container.innerHTML = side()
 
@@ -79,6 +79,9 @@ let main = document.getElementById("product-list");
   let helloo = JSON.parse(localStorage.getItem("j")) || []
 console.log(helloo)
   show(helloo)
+
+  let cartArr = JSON.parse(localStorage.getItem("items")) || []
+
 
 function show(data){
     main.innerHTML = null;
@@ -165,7 +168,6 @@ function show(data){
           btnDiv.append(button, spanfav);
           info.append(title, rating, priceDiv, btnDiv);
           card.append(img, sale, info);
-          let cartArr = JSON.parse(localStorage.getItem("items")) || []
           card.onclick =()=>{
             cartArr.push(el)
             localStorage.setItem("cartdata", JSON.stringify(cartArr))
