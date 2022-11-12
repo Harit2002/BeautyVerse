@@ -52,8 +52,8 @@ const navbar = () => {
         <div class="dropdown-content">
         <a href="/-puny-corn-6420/signin.html">Login</a>
         <a href="/-puny-corn-6420/register.html">Register</a>
-        <a href="/-puny-corn-6420/AdminSignin.html">Admin Login</a>
-        <a href="/-puny-corn-6420/AdminRegister.html">Admin Register</a>
+        <a href="/-puny-corn-6420/adminLogin.html">Admin Login</a>
+        <a href="/-puny-corn-6420/adminRegister.html">Admin Register</a>
         </div> 
         <h4>My Account</h4>
   </div>
@@ -71,7 +71,9 @@ const navbar = () => {
             <a id="brand" href = "/-puny-corn-6420/Products Pages/brand.html"><span >BRAND</span></a>
         </div>
         <div id="cart-div">
-        <a href="./addcart.html">
+
+        <a href="/-puny-corn-6420/addcart.html">
+
             <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
             <span class = "span">My Cart - </span>
             <span class = "span" id="cart2">0.00</span>

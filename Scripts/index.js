@@ -1,8 +1,12 @@
 import { navbar, footer } from "./top_components.js";
 document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
+
+   
+let carousel_div=document.getElementById("carousel");
+
 function carousel(){
-    let carousel_div=document.getElementById("carousel");
+
   let images=["https://www.beautybebo.com/pub/media/ads/home-slider/Slider_banner_1-min.jpg","https://www.beautybebo.com/pub/media/ads/home-slider/Mamaearth_banner_1-min.jpg","https://www.beautybebo.com/pub/media/ads/home-slider/Ponds_Forent_Banner_6-min.jpg"];
   let image=document.createElement("img");
   image.src=images[0];
@@ -17,7 +21,9 @@ function carousel(){
    i++;
   },3000);
 }
+
 carousel();
+
 import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
 
 
@@ -83,6 +89,712 @@ window.onload = ()=>{
   let sum = (localStorage.getItem("paisa")) || 0;
   document.getElementById("cart2").innerText = `₹`+sum
 }
+
+let main = document.getElementById("midnavData");
+document.getElementById("make2").onclick = ()=>{
+        makeup(helloo)
+}
+document.getElementById("skin2").addEventListener("click",function(){
+        skin(helloo)
+})
+document.getElementById("hair2").addEventListener("click",function(){
+  hair(helloo)
+})
+document.getElementById("personal2").addEventListener("click",function(){
+  personal(helloo)
+})
+document.getElementById("mom2").addEventListener("click",function(){
+  kids(helloo)
+})
+document.getElementById("eye2").addEventListener("click",function(){
+  ayurveda(helloo)
+})
+document.getElementById("frag2").addEventListener("click",function(){
+  fragrance(helloo)
+})
+
+  let helloo = JSON.parse(localStorage.getItem("k")) || []
+console.log(helloo)
+makeup(helloo);
+
+let cartArr = JSON.parse(localStorage.getItem("items")) || []
+function makeup(data){
+    main.innerHTML = null;
+     data[0].makeup.forEach(
+        (el) =>{          
+          let card = document.createElement("div");
+          card.setAttribute("id", "card");
+
+          
+          
+      
+          let img = document.createElement("img");
+          img.src = el.image;
+          // img.addEventListener("click", function () {
+          //   aariftit(elem);
+          // });
+      
+          let sale = document.createElement("div");
+          sale.setAttribute("id", "sale");
+          sale.innerText = "Sale";
+      
+          let info = document.createElement("div");
+          info.setAttribute("id", "info");
+      
+          let title = document.createElement("p");
+          title.innerText = el.title;
+          // title.addEventListener("click", function () {
+          //   aariftit(elem);
+          // });
+      
+          let rating = document.createElement("div");
+          rating.setAttribute("id", "rating");
+          rating.innerHTML = `<span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>`;
+      
+          let priceDiv = document.createElement("div");
+          priceDiv.setAttribute("id", "price-div");
+      
+          let span1 = document.createElement("div");
+          span1.setAttribute("id", "span1");
+          if (el.strikedOffPrice != "") {
+            span1.innerText = `₹${el.strikedOffPrice}`;
+          } else {
+            span1.innerText = "";
+          }
+      
+          let span2 = document.createElement("div");
+          span2.setAttribute("id", "span2");
+          span2.innerText = `₹${el.price}`;
+      
+          let span3 = document.createElement("div");
+          span3.setAttribute("id", "span3");
+          span3.innerText = el.discount;
+      
+          let btnDiv = document.createElement("div");
+          btnDiv.setAttribute("id", "btn-div");
+      
+          let button = document.createElement("button");
+          // button.innerHTML = '<img src="cart-38-24.png" alt="">';
+          button.addEventListener("click", addMoney);
+          function addMoney(){
+            let store = (localStorage.getItem("paisa")) || 0;
+            let sum = eval(Number(el.price)+(Number(store)))
+            localStorage.setItem("paisa",(sum))
+
+            document.getElementById("cart2").innerText = `₹`+sum
+          }
+          window.onload = ()=>{
+            let sum = (localStorage.getItem("paisa")) || 0;
+            document.getElementById("cart2").innerText = `₹`+sum
+          }
+          let spanBtn = document.createElement("span");
+          spanBtn.innerText = "Add To Cart";
+          button.append(spanBtn);
+      
+          let spanfav = document.createElement("span");
+          spanfav.setAttribute("id", "fav");
+          spanfav.innerHTML = "🤍";
+      
+          priceDiv.append(span1, span2, span3);
+          btnDiv.append(button, spanfav);
+          info.append(title, rating, priceDiv, btnDiv);
+          card.append(img, sale, info);
+          
+          card.onclick =()=>{
+            cartArr.push(el)
+            localStorage.setItem("cartdata", JSON.stringify(cartArr))
+          }
+          main.append(card);
+
+
+        
+        }
+     )
+}
+function skin(data){
+   main.innerHTML = null;
+   data[0].skin.forEach(
+      (el) =>{          
+        let card = document.createElement("div");
+        card.setAttribute("id", "card");
+
+    
+        let img = document.createElement("img");
+        img.src = el.image;
+        // img.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let sale = document.createElement("div");
+        sale.setAttribute("id", "sale");
+        sale.innerText = "Sale";
+    
+        let info = document.createElement("div");
+        info.setAttribute("id", "info");
+    
+        let title = document.createElement("p");
+        title.innerText = el.title;
+        // title.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let rating = document.createElement("div");
+        rating.setAttribute("id", "rating");
+        rating.innerHTML = `<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>`;
+    
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("id", "price-div");
+    
+        let span1 = document.createElement("div");
+        span1.setAttribute("id", "span1");
+        if (el.strikedOffPrice != "") {
+          span1.innerText = `₹${el.strikedOffPrice}`;
+        } else {
+          span1.innerText = "";
+        }
+    
+        let span2 = document.createElement("div");
+        span2.setAttribute("id", "span2");
+        span2.innerText = `₹${el.price}`;
+    
+        let span3 = document.createElement("div");
+        span3.setAttribute("id", "span3");
+        span3.innerText = el.discount;
+    
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id", "btn-div");
+    
+        let button = document.createElement("button");
+        button.innerHTML = '<img src="cart-38-24.png" alt="">';
+        // button.addEventListener("click", function () {
+        //   addel(elem);
+        // });
+        button.addEventListener("click", addMoney);
+        function addMoney(){
+          let store = (localStorage.getItem("paisa")) || 0;
+          let sum = eval(Number(el.price)+(Number(store)))
+          localStorage.setItem("paisa",(sum))
+
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        window.onload = ()=>{
+          let sum = (localStorage.getItem("paisa")) || 0;
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+
+        let spanBtn = document.createElement("span");
+        spanBtn.innerText = "Add To Cart";
+        button.append(spanBtn);
+    
+        let spanfav = document.createElement("span");
+        spanfav.setAttribute("id", "fav");
+        spanfav.innerHTML = "🤍";
+    
+        priceDiv.append(span1, span2, span3);
+        btnDiv.append(button, spanfav);
+        info.append(title, rating, priceDiv, btnDiv);
+        card.append(img, sale, info);
+        card.onclick =()=>{
+          cartArr.push(el)
+          localStorage.setItem("cartdata", JSON.stringify(cartArr))
+        }
+        // window.onload = ()=>{
+        //   cartArr.push(el)
+        //   localStorage.setItem("cartdata", JSON.stringify(cartArr))
+        // }
+        
+        main.append(card);
+
+      
+      }
+   )
+}
+function hair(data){
+  main.innerHTML = null;
+   data[0].hair.forEach(
+      (el) =>{          
+        let card = document.createElement("div");
+        card.setAttribute("id", "card");
+    
+        let img = document.createElement("img");
+        img.src = el.image;
+        // img.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let sale = document.createElement("div");
+        sale.setAttribute("id", "sale");
+        sale.innerText = "Sale";
+    
+        let info = document.createElement("div");
+        info.setAttribute("id", "info");
+    
+        let title = document.createElement("p");
+        title.innerText = el.title;
+        // title.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let rating = document.createElement("div");
+        rating.setAttribute("id", "rating");
+        rating.innerHTML = `<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>`;
+    
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("id", "price-div");
+    
+        let span1 = document.createElement("div");
+        span1.setAttribute("id", "span1");
+        if (el.strikedOffPrice != "") {
+          span1.innerText = `₹${el.strikedOffPrice}`;
+        } else {
+          span1.innerText = "";
+        }
+    
+        let span2 = document.createElement("div");
+        span2.setAttribute("id", "span2");
+        span2.innerText = `₹${el.price}`;
+    
+        let span3 = document.createElement("div");
+        span3.setAttribute("id", "span3");
+        span3.innerText = el.discount;
+    
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id", "btn-div");
+    
+        let button = document.createElement("button");
+        button.innerHTML = '<img src="cart-38-24.png" alt="">';
+        // button.addEventListener("click", function () {
+        //   addel(elem);
+        // });
+        button.addEventListener("click", addMoney);
+        function addMoney(){
+          let store = (localStorage.getItem("paisa")) || 0;
+          let sum = eval(Number(el.price)+(Number(store)))
+          localStorage.setItem("paisa",(sum))
+
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        window.onload = ()=>{
+          let sum = (localStorage.getItem("paisa")) || 0;
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        let spanBtn = document.createElement("span");
+        spanBtn.innerText = "Add To Cart";
+        button.append(spanBtn);
+    
+        let spanfav = document.createElement("span");
+        spanfav.setAttribute("id", "fav");
+        spanfav.innerHTML = "🤍";
+    
+        priceDiv.append(span1, span2, span3);
+        btnDiv.append(button, spanfav);
+        info.append(title, rating, priceDiv, btnDiv);
+        card.append(img, sale, info);
+        card.onclick =()=>{
+          cartArr.push(el)
+          localStorage.setItem("cartdata", JSON.stringify(cartArr))
+        }
+        main.append(card);
+
+      
+      }
+   )
+}
+function personal(data){
+  main.innerHTML = null;
+   data[0].personal.forEach(
+      (el) =>{          
+        let card = document.createElement("div");
+        card.setAttribute("id", "card");
+    
+        let img = document.createElement("img");
+        img.src = el.image;
+        // img.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let sale = document.createElement("div");
+        sale.setAttribute("id", "sale");
+        sale.innerText = "Sale";
+    
+        let info = document.createElement("div");
+        info.setAttribute("id", "info");
+    
+        let title = document.createElement("p");
+        title.innerText = el.title;
+        // title.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let rating = document.createElement("div");
+        rating.setAttribute("id", "rating");
+        rating.innerHTML = `<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>`;
+    
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("id", "price-div");
+    
+        let span1 = document.createElement("div");
+        span1.setAttribute("id", "span1");
+        if (el.strikedOffPrice != "") {
+          span1.innerText = `₹${el.strikedOffPrice}`;
+        } else {
+          span1.innerText = "";
+        }
+    
+        let span2 = document.createElement("div");
+        span2.setAttribute("id", "span2");
+        span2.innerText = `₹${el.price}`;
+    
+        let span3 = document.createElement("div");
+        span3.setAttribute("id", "span3");
+        span3.innerText = el.discount;
+    
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id", "btn-div");
+    
+        let button = document.createElement("button");
+        button.innerHTML = '<img src="cart-38-24.png" alt="">';
+        // button.addEventListener("click", function () {
+        //   addel(elem);
+        // });
+        button.addEventListener("click", addMoney);
+        function addMoney(){
+          let store = (localStorage.getItem("paisa")) || 0;
+          let sum = eval(Number(el.price)+(Number(store)))
+          localStorage.setItem("paisa",(sum))
+
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        window.onload = ()=>{
+          let sum = (localStorage.getItem("paisa")) || 0;
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        let spanBtn = document.createElement("span");
+        spanBtn.innerText = "Add To Cart";
+        button.append(spanBtn);
+    
+        let spanfav = document.createElement("span");
+        spanfav.setAttribute("id", "fav");
+        spanfav.innerHTML = "🤍";
+    
+        priceDiv.append(span1, span2, span3);
+        btnDiv.append(button, spanfav);
+        info.append(title, rating, priceDiv, btnDiv);
+        card.append(img, sale, info);
+        card.onclick =()=>{
+          cartArr.push(el)
+          localStorage.setItem("cartdata", JSON.stringify(cartArr))
+        }
+        main.append(card);
+
+      
+      }
+   )
+}
+function kids(data){
+  main.innerHTML = null;
+   data[0].kids.forEach(
+      (el) =>{          
+        let card = document.createElement("div");
+        card.setAttribute("id", "card");
+    
+        let img = document.createElement("img");
+        img.src = el.image;
+        // img.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let sale = document.createElement("div");
+        sale.setAttribute("id", "sale");
+        sale.innerText = "Sale";
+    
+        let info = document.createElement("div");
+        info.setAttribute("id", "info");
+    
+        let title = document.createElement("p");
+        title.innerText = el.title;
+        // title.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let rating = document.createElement("div");
+        rating.setAttribute("id", "rating");
+        rating.innerHTML = `<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>`;
+    
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("id", "price-div");
+    
+        let span1 = document.createElement("div");
+        span1.setAttribute("id", "span1");
+        if (el.strikedOffPrice != "") {
+          span1.innerText = `₹${el.strikedOffPrice}`;
+        } else {
+          span1.innerText = "";
+        }
+    
+        let span2 = document.createElement("div");
+        span2.setAttribute("id", "span2");
+        span2.innerText = `₹${el.price}`;
+    
+        let span3 = document.createElement("div");
+        span3.setAttribute("id", "span3");
+        span3.innerText = el.discount;
+    
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id", "btn-div");
+    
+        let button = document.createElement("button");
+        button.innerHTML = '<img src="cart-38-24.png" alt="">';
+        // button.addEventListener("click", function () {
+        //   addel(elem);
+        // });
+        button.addEventListener("click", addMoney);
+        function addMoney(){
+          let store = (localStorage.getItem("paisa")) || 0;
+          let sum = eval(Number(el.price)+(Number(store)))
+          localStorage.setItem("paisa",(sum))
+
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        window.onload = ()=>{
+          let sum = (localStorage.getItem("paisa")) || 0;
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        let spanBtn = document.createElement("span");
+        spanBtn.innerText = "Add To Cart";
+        button.append(spanBtn);
+    
+        let spanfav = document.createElement("span");
+        spanfav.setAttribute("id", "fav");
+        spanfav.innerHTML = "🤍";
+    
+        priceDiv.append(span1, span2, span3);
+        btnDiv.append(button, spanfav);
+        info.append(title, rating, priceDiv, btnDiv);
+        card.append(img, sale, info);
+        card.onclick =()=>{
+          cartArr.push(el)
+          localStorage.setItem("cartdata", JSON.stringify(cartArr))
+        }
+        main.append(card);
+
+      
+      }
+   )
+}
+function fragrance(data){
+  main.innerHTML = null;
+   data[0].perfume.forEach(
+      (el) =>{          
+        let card = document.createElement("div");
+        card.setAttribute("id", "card");
+    
+        let img = document.createElement("img");
+        img.src = el.image;
+        // img.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let sale = document.createElement("div");
+        sale.setAttribute("id", "sale");
+        sale.innerText = "Sale";
+    
+        let info = document.createElement("div");
+        info.setAttribute("id", "info");
+    
+        let title = document.createElement("p");
+        title.innerText = el.title;
+        // title.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let rating = document.createElement("div");
+        rating.setAttribute("id", "rating");
+        rating.innerHTML = `<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>`;
+    
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("id", "price-div");
+    
+        let span1 = document.createElement("div");
+        span1.setAttribute("id", "span1");
+        if (el.strikedOffPrice != "") {
+          span1.innerText = `₹${el.strikedOffPrice}`;
+        } else {
+          span1.innerText = "";
+        }
+    
+        let span2 = document.createElement("div");
+        span2.setAttribute("id", "span2");
+        span2.innerText = `₹${el.price}`;
+    
+        let span3 = document.createElement("div");
+        span3.setAttribute("id", "span3");
+        span3.innerText = el.discount;
+    
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id", "btn-div");
+    
+        let button = document.createElement("button");
+        button.innerHTML = '<img src="cart-38-24.png" alt="">';
+        // button.addEventListener("click", function () {
+        //   addel(elem);
+        // });
+        button.addEventListener("click", addMoney);
+        function addMoney(){
+          let store = (localStorage.getItem("paisa")) || 0;
+          let sum = eval(Number(el.price)+(Number(store)))
+          localStorage.setItem("paisa",(sum))
+
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        window.onload = ()=>{
+          let sum = (localStorage.getItem("paisa")) || 0;
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        let spanBtn = document.createElement("span");
+        spanBtn.innerText = "Add To Cart";
+        button.append(spanBtn);
+    
+        let spanfav = document.createElement("span");
+        spanfav.setAttribute("id", "fav");
+        spanfav.innerHTML = "🤍";
+    
+        priceDiv.append(span1, span2, span3);
+        btnDiv.append(button, spanfav);
+        info.append(title, rating, priceDiv, btnDiv);
+        card.append(img, sale, info);
+        card.onclick =()=>{
+          cartArr.push(el)
+          localStorage.setItem("cartdata", JSON.stringify(cartArr))
+        }
+        main.append(card);
+
+      
+      }
+   )
+}
+function ayurveda(data){
+  main.innerHTML = null;
+   data[0].ayurveda.forEach(
+      (el) =>{          
+        let card = document.createElement("div");
+        card.setAttribute("id", "card");
+    
+        let img = document.createElement("img");
+        img.src = el.image;
+        // img.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let sale = document.createElement("div");
+        sale.setAttribute("id", "sale");
+        sale.innerText = "Sale";
+    
+        let info = document.createElement("div");
+        info.setAttribute("id", "info");
+    
+        let title = document.createElement("p");
+        title.innerText = el.title;
+        // title.addEventListener("click", function () {
+        //   aariftit(elem);
+        // });
+    
+        let rating = document.createElement("div");
+        rating.setAttribute("id", "rating");
+        rating.innerHTML = `<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>`;
+    
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("id", "price-div");
+    
+        let span1 = document.createElement("div");
+        span1.setAttribute("id", "span1");
+        if (el.strikedOffPrice != "") {
+          span1.innerText = `₹${el.strikedOffPrice}`;
+        } else {
+          span1.innerText = "";
+        }
+    
+        let span2 = document.createElement("div");
+        span2.setAttribute("id", "span2");
+        span2.innerText = `₹${el.price}`;
+    
+        let span3 = document.createElement("div");
+        span3.setAttribute("id", "span3");
+        span3.innerText = el.discount;
+    
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id", "btn-div");
+    
+        let button = document.createElement("button");
+        button.innerHTML = '<img src="cart-38-24.png" alt="">';
+        // button.addEventListener("click", function () {
+        //   addel(elem);
+        // });
+        button.addEventListener("click", addMoney);
+        function addMoney(){
+          let store = (localStorage.getItem("paisa")) || 0;
+          let sum = eval(Number(el.price)+(Number(store)))
+          localStorage.setItem("paisa",(sum))
+
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        window.onload = ()=>{
+          let sum = (localStorage.getItem("paisa")) || 0;
+          document.getElementById("cart2").innerText = `₹`+sum
+        }
+        let spanBtn = document.createElement("span");
+        spanBtn.innerText = "Add To Cart";
+        button.append(spanBtn);
+    
+        let spanfav = document.createElement("span");
+        spanfav.setAttribute("id", "fav");
+        spanfav.innerHTML = "🤍";
+    
+        priceDiv.append(span1, span2, span3);
+        btnDiv.append(button, spanfav);
+        info.append(title, rating, priceDiv, btnDiv);
+        card.append(img, sale, info);
+        card.onclick =()=>{
+          cartArr.push(el)
+          localStorage.setItem("cartdata", JSON.stringify(cartArr))
+        }
+        main.append(card);
+
+      
+      }
+   )
+}
+ 
+
+
 
 
 
