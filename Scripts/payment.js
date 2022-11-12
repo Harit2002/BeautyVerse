@@ -103,6 +103,7 @@ document.getElementById("proceedcash").onclick=()=>{
         alert("Enter valid otp")
     } else{
         alert("Payment successful")
+        document.getElementById("cash_on_delivery").style.display="none"  
     }
 }
 document.getElementById("proceeddebit").onclick=()=>{
@@ -117,6 +118,7 @@ alert("Enter all card details")
         window.prompt
         const Enter_otp = prompt( `Enter new otp sent to your registered number`)
         alert("Payment successful")
+        document.getElementById("debit").style.display="none"  
         
     }
 }
@@ -126,3 +128,7 @@ document.getElementById("name").innerText=data[data.length-1].name;
 document.getElementById("address").innerText=data[data.length-1].address;
 document.getElementById("city").innerText=data[data.length-1].city;
 document.getElementById("pin").innerText=data[data.length-1].pin;
+
+let paisa=JSON.parse(localStorage.getItem("paisa"))
+document.getElementById("subtotal").innerText=paisa+".00";
+document.getElementById("total").innerText=paisa+49.99+11;
