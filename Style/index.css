@@ -514,3 +514,30 @@ ul>li:hover{
 #cart-div>span{
     color: white;
 }
+
+/* about us details */
+#about_us a:hover{
+    cursor: pointer;
+    background-color: #b7026f;
+}
+#about_us{
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    padding: 0px 30px 6px 0px;
+    margin-top: 50px;
+}
+#about_us .title_about_us,p,b{
+    color: #666666;
+
+}
+#about_us p,b{
+    font-size: 14px;
+}
+#about_us a{
+    text-decoration: none;
+}
+#about_us a>b:hover{
+    background-color: #fff;
+    color: #b7026f;
+}
