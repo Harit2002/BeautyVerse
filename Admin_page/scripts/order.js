@@ -9,7 +9,7 @@ let name_div = document.getElementById('name');
 
 let adminData = JSON.parse(localStorage.getItem('admin_data'));
 
-name_div.append(h3);
+// name_div.append(h3);
 if(adminData){
   let h3 = document.createElement('h3');
   h3.innerText=adminData.first_name;
@@ -139,6 +139,8 @@ const append=(data)=>{
             console.log(el.id);
             deletepost(el.id) 
           }
+
+          
          
       
           let spanfav = document.createElement("button");
