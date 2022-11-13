@@ -64,7 +64,7 @@ payment_div.onclick = () =>{
   window.location.href = "payment.html"
 }
 function logout(){
-  window.location.href = "/-puny-corn-6420/index.html"
+  window.location.href = "../index.html"
 }
 
 //appending data to table

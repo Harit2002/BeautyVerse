@@ -153,11 +153,7 @@ const append=(data)=>{
           btnDiv.append(spanBtn, spanfav);
           info.append(title, priceDiv, btnDiv);
           card.append(img, info);
-          
-  function logout(){
-    window.location.href = "/-puny-corn-6420/index.html"
-  }
-       
+           
 
           // window.onload = ()=>{
           //   cartArr.push(el)
@@ -182,3 +178,7 @@ const deletepost=async(delete_id)=>{
   })
   
   }
+  function logout(){
+    window.location.href = "../index.html"
+  }
+      
