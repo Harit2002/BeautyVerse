@@ -97,3 +97,16 @@ form.addEventListener("submit", (e) => {
         alert("Invalid Details")
     }
 })
+
+//fuc to update user name
+let user_div = document.getElementById('Uname');
+function changeName(){
+  let udata = JSON.parse(localStorage.getItem('personal_data'));
+  if(udata){
+    user_div.innerHTML = null;
+    let h4 = document.createElement('h4');
+    h4.innerText=udata.first_name;
+    user_div.append(h4);
+  }
+}
+changeName();
