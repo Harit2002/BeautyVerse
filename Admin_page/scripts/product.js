@@ -92,5 +92,5 @@ console.log(err);
 }
 
 function logout(){
-  window.location.href = "/-puny-corn-6420/index.html"
+  window.location.href = "../index.html"
 }
