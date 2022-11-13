@@ -1,4 +1,4 @@
-import { navbar,footer } from "/-puny-corn-6420/Scripts/top_components.js";
+import { navbar,footer } from "../Scripts/top_components.js";
  document.getElementById("navbar").innerHTML=navbar();
  document.getElementById("footer").innerHTML=footer();
 let container = document.getElementById("container");
@@ -12,7 +12,7 @@ container.innerHTML = side()
     let shades = document.getElementById("shds").addEventListener("click", showshades);
     let fomulation = document.getElementById("forml").addEventListener("click", showfom);
 
-    import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
+    import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "../Scripts/dropdown.js"
 
 
 import {showlist, showskin,showcolor,showprice,showbrand,showshades,showfom,side} from "./com/sidebar.js"
