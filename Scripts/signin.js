@@ -10,7 +10,7 @@ go_to_register.addEventListener("click", () => {
 
 document.getElementById("footer").innerHTML=footer();
 
-import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "./Scripts/dropdown.js"
+import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "./dropdown.js"
 
 
 let div = document.querySelector(".open-div");

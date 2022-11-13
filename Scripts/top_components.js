@@ -1,7 +1,7 @@
 const navbar = () => {
     return `<div id="navbar-1">
   <div id="logo">
-  <a href="./index.html">
+  <a href="../index.html">
   <img  alt="logo"  src="https://i.ibb.co/MnjWFL0/image-1.png"/>
   
   </a>
@@ -50,10 +50,12 @@ const navbar = () => {
           <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png"> 
         </button>
         <div class="dropdown-content">
+
         <a href="signin.html">User Login</a>
         <a href="register.html">User Register</a>
         <a href="adminLogin.html">Admin Login</a>
         <a href="adminRegister.html">Admin Register</a>
+
         </div> 
         <div id="Uname"><h4>My Account</h4></div>
   </div>
@@ -72,7 +74,7 @@ const navbar = () => {
         </div>
         <div id="cart-div">
 
-        <a href="./addcart.html">
+        <a href="addcart.html">
 
             <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
             <span class = "span">My Cart - </span>
