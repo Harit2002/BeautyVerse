@@ -50,10 +50,12 @@ const navbar = () => {
           <img src="https://cdn-icons-png.flaticon.com/512/709/709722.png"> 
         </button>
         <div class="dropdown-content">
+
         <a href="signin.html">User Login</a>
         <a href="register.html">User Register</a>
         <a href="adminLogin.html">Admin Login</a>
         <a href="adminRegister.html">Admin Register</a>
+
         </div> 
         <div id="Uname"><h4>My Account</h4></div>
   </div>
