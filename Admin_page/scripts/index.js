@@ -9,10 +9,20 @@ document.getElementById('logout').addEventListener('click',logout);
 let name_div = document.getElementById('name');
 let pending_div = document.getElementById('pending');
 
-let h3 = document.createElement('h3');
-h3.innerText=adminData.first_name;
-name_div.append(h3);
-pending_div.innerText = cartData.length;
+
+
+  if(adminData){
+    let h3 = document.createElement('h3');
+    h3.innerText=adminData.first_name;
+    name_div.append(h3);
+  }
+ if(cartData){
+  pending_div.innerText = cartData.length;
+ }
+  
+
+
+
 
 let name = document.getElementById("name");
 let div = document.getElementById("login");
