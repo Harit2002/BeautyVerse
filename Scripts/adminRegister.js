@@ -9,7 +9,7 @@ nav_div.innerHTML = navbar();
 let form = document.getElementById("form");
 let AppendButtonHere = document.getElementById("AppendButtonHere")
 AppendButtonHere.addEventListener("click", () => {
-    window.location.href = "./adminLogin.html"
+    window.location.href = "adminLogin.html"
 })
 let lsdata = JSON.parse(localStorage.getItem("admin_data"));
 form.addEventListener("submit", function (e) {

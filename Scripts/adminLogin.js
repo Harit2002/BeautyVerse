@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
     if (lsdata.email == email) {
         if (lsdata.password == password && lsdata.employeeCode == employeeCode) {
             alert("Sign in Succesfull")
-            window.location.href = "/-puny-corn-6420/Admin_page/index.html"
+            window.location.href = "./Admin_page/index.html"
         } else if (lsdata.password == null) {
             alert("Plese Enter Password")
         } else {

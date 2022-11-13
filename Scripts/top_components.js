@@ -1,7 +1,7 @@
 const navbar = () => {
     return `<div id="navbar-1">
   <div id="logo">
-  <a href="./index.html">
+  <a href="../index.html">
   <img  alt="logo"  src="https://i.ibb.co/MnjWFL0/image-1.png"/>
   
   </a>
@@ -74,7 +74,7 @@ const navbar = () => {
         </div>
         <div id="cart-div">
 
-        <a href="./addcart.html">
+        <a href="addcart.html">
 
             <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
             <span class = "span">My Cart - </span>

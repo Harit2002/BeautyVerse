@@ -10,7 +10,7 @@ go_to_register.addEventListener("click", () => {
 
 document.getElementById("footer").innerHTML=footer();
 
-import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
+import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "./dropdown.js"
 
 
 let div = document.querySelector(".open-div");
@@ -87,7 +87,7 @@ form.addEventListener("submit", (e) => {
     if (lsdata.email == email) {
         if (lsdata.password == password) {
             alert("Sign in Succesfull")
-            window.location.href = "./index.html"
+            window.location.href = "index.html"
         } else if (lsdata.password == null) {
             alert("Plese Enter Password")
         } else {
