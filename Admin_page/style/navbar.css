@@ -41,34 +41,46 @@
   gap: 20px;
 }
 #dashboard > #LeftSideBar > div {
-    padding: 12px;
-    font-size: 18px;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border: 0.5px solid pink;
-  }
-  #dashboard > #LeftSideBar > div:hover{
-    background-color: rgb(194, 0, 187);
-  }
-  #dashboard > #LeftSideBar {
-    /* border: 1px solid red; */
-    background-color: rgba(247, 59, 181, 0.995);
-    border-radius: 10px;
-    padding: 20px;
-  }
-  #username i{
-    font-size: 26px;
-  }
-  #username button{
-    background-color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  #username #name:hover{
-    background-color: rgba(220, 219, 219, 0.592);
-  }
-  #login i{
-    font-size: 18px;
-  }
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 0.5px solid pink;
+}
+#dashboard > #LeftSideBar > div:hover {
+  background-color: rgb(194, 0, 187);
+}
+#dashboard > #LeftSideBar {
+  /* border: 1px solid red; */
+  background-color: rgba(247, 59, 181, 0.995);
+  border-radius: 10px;
+  padding: 20px;
+}
+#username i {
+  font-size: 26px;
+}
+#name {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+#username #name:hover {
+  background-color: rgba(220, 219, 219, 0.592);
+}
+#login i {
+  font-size: 18px;
+}
+#logout {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+#login li {
+  cursor: pointer;
+}
+
+li + button{
+  display: none;
+}

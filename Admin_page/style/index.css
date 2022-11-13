@@ -22,9 +22,9 @@
     padding: 14px;
     border-radius: 8px;
   }
-  #recentOrders>table td,th{
+  /* #recentOrders>table td,th{
    border: none;
-  }
+  } */
   .tRow{
     border: 1px solid black;
   }
