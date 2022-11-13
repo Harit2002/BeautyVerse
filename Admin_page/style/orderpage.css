@@ -33,8 +33,15 @@
     cursor: pointer;
 }
 
-
-
+#dashboard>#RightSideBar{
+    flex: 8;
+  }
+  #dashboard > #LeftSideBar {
+    /* border: 1px solid red; */
+    flex: 2;
+    height: fit-content;
+  
+  }
 
 
 

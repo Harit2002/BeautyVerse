@@ -79,7 +79,7 @@ let main = document.getElementById("product-list");
   let helloo = JSON.parse(localStorage.getItem("j")) || []
 console.log(helloo)
   show(helloo)
-  let cartArr = JSON.parse(localStorage.getItem("items")) || []
+  let cartArr = JSON.parse(localStorage.getItem("cartdata")) || []
 
 function show(data){
     main.innerHTML = null;
@@ -225,3 +225,15 @@ document.getElementById("sort").addEventListener("change", function(){
       show(helloo);
     }
 });
+//fuc to update user name
+let user_div = document.getElementById('Uname');
+function changeName(){
+  let udata = JSON.parse(localStorage.getItem('personal_data'));
+  if(udata){
+    user_div.innerHTML = null;
+    let h4 = document.createElement('h4');
+    h4.innerText=udata.first_name;
+    user_div.append(h4);
+  }
+}
+changeName();

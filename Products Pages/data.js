@@ -3479,7 +3479,17 @@ let product = {
 
     ],
 };
-
+// getData = async() =>{
+//     try{
+//         let res = await fetch(`https://shielded-stream-64345.herokuapp.com/productData`);
+//         let data = await res.json();
+//         localStorage.setItem('j',JSON.stringify(data));
+//     }
+//     catch(err){
+//         console.log(err);
+//     }
+// }
+// getData();
 let arr = [];
 arr.push(product);
 localStorage.setItem("j",JSON.stringify(arr)) || [];

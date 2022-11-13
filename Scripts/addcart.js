@@ -93,9 +93,10 @@ document.getElementById("brand").addEventListener("mouseout", () => {
 let wishlist=JSON.parse(localStorage.getItem("wishlist"))||[];
 let table=document.querySelector("#tbody")
 let sum=0;
+
 const append=(data)=>{
    table.innerHTML=null;
-    data.forEach((el)=>{
+    data.forEach((el,i)=>{
         let row=document.createElement("tr")
 let item=document.createElement("td")
 let img=document.createElement("img")
@@ -109,6 +110,7 @@ price.innerText=el.price;
 let number=document.createElement("td")
 number.innerText=el.quantity;
 let subtotal=document.createElement("td")
+
 subtotal.innerHTML=Number(el.quantity)*Number(el.price);
 sum=sum+(Number(el.quantity)*Number(el.price));
 document.getElementById("subtotal").innerText=sum+".00";
@@ -122,12 +124,14 @@ btn1.onclick=()=>{
     wishlist.push(el)
     localStorage.setItem("wishlist",JSON.stringify(wishlist))
 }
+
 let btn2=document.createElement("button")
 btn2.innerText="Edit"
 btn2.className="butn"
 btn2.onclick=()=>{
     window.prompt
     const Enter_QTY=prompt(`Enter number of items`)
+    window.location.reload()
     number.innerText=Enter_QTY;
     el.quantity=Enter_QTY;
     localStorage.setItem("cartdata",JSON.stringify(data))
@@ -136,12 +140,18 @@ btn2.onclick=()=>{
     document.getElementById("subtotal").innerText=sum+".00";
 document.getElementById("total").innerText=(sum+50)+".00"
 paisa=sum;
+window.location.reload()
 localStorage.setItem("paisa",JSON.stringify(paisa))
+let sum = (localStorage.getItem("paisa")) || 0;
+  document.getElementById("cart2").innerText = `₹`+sum
+  
 }
 let btn3=document.createElement("button")
 btn3.innerText="Remove"
 btn3.className="butn"
 btn3.onclick=()=>{
+
+  removeData(i)
 
 }
 
@@ -162,6 +172,13 @@ table.append(row,row2)
 
 append(data)
 
+function removeData(i){
+   window.location.reload()
+   data.splice(i,1);
+   localStorage.setItem("cartdata",JSON.stringify(data))
+   append(data);
+}
+
 
 
 
@@ -170,3 +187,16 @@ window.onload = ()=>{
   let sum = (localStorage.getItem("paisa")) || 0;
   document.getElementById("cart2").innerText = `₹`+sum
 }
+
+//fuc to update user name
+let user_div = document.getElementById('Uname');
+function changeName(){
+  let udata = JSON.parse(localStorage.getItem('personal_data'));
+  if(udata){
+    user_div.innerHTML = null;
+    let h4 = document.createElement('h4');
+    h4.innerText=udata.first_name;
+    user_div.append(h4);
+  }
+}
+changeName();

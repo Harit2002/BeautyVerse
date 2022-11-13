@@ -92,10 +92,10 @@ userdata()
 }
 let count=0;
 const userdata=()=>{
-    if(form.firtname.value==""||form.address.value==""||form.mobile.value==""||form.pincode.value==""){
-        alert("Enter all details")
-        return;
-    }
+    // if(form.firtname.value==""||form.address.value==""||form.mobile.value==""||form.pincode.value==""){
+    //     alert("Enter all details")
+    //     return;
+    // }
     count++
     let obj={
         name:form.firtname.value,
@@ -128,3 +128,16 @@ const userdata=()=>{
    
    
 }
+
+//fuc to update user name
+let user_div = document.getElementById('Uname');
+function changeName(){
+  let udata = JSON.parse(localStorage.getItem('personal_data'));
+  if(udata){
+    user_div.innerHTML = null;
+    let h4 = document.createElement('h4');
+    h4.innerText=udata.first_name;
+    user_div.append(h4);
+  }
+}
+changeName();

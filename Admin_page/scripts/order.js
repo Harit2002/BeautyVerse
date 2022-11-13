@@ -2,6 +2,13 @@ import{navbar,leftSideNavbar} from "./nav_components.js"
 
 document.getElementById('LeftSideBar').innerHTML = leftSideNavbar();
 document.getElementById('navbar').innerHTML = navbar();
+document.getElementById('logout').addEventListener('click',logout);
+let name_div = document.getElementById('name');
+
+let adminData = JSON.parse(localStorage.getItem('admin_data'));
+let h3 = document.createElement('h3');
+h3.innerText=adminData.first_name;
+name_div.append(h3);
 
 let name = document.getElementById("name");
 let div = document.getElementById("login");
@@ -30,6 +37,10 @@ let home_div = document.getElementById('home');
 home_div.onclick = () =>{
     window.location.href = "index.html"
   }
+  let payment_div = document.getElementById("payment");
+payment_div.onclick = () =>{
+  window.location.href = "payment.html"
+}
 
 const getdata= async()=>{
   let res=await fetch(`https://shielded-stream-64345.herokuapp.com/productData?_limit=10`);
@@ -131,7 +142,11 @@ const append=(data)=>{
           info.append(title, priceDiv, btnDiv);
           card.append(img, info);
           
+  function logout(){
+    window.location.href = "/-puny-corn-6420/index.html"
+  }
        
+
           // window.onload = ()=>{
           //   cartArr.push(el)
           //   localStorage.setItem("cartdata", JSON.stringify(cartArr))
