@@ -49,3 +49,6 @@ home_div.onclick = () => {
 function logout() {
   window.location.href = "/-puny-corn-6420/index.html";
 }
+function logout(){
+  window.location.href = "/-puny-corn-6420/index.html"
+}
