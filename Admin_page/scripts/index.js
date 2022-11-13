@@ -11,6 +11,7 @@ let pending_div = document.getElementById('pending');
 
 
 
+
   if(adminData){
     let h3 = document.createElement('h3');
     h3.innerText=adminData.first_name;
@@ -20,9 +21,6 @@ let pending_div = document.getElementById('pending');
   pending_div.innerText = cartData.length;
  }
   
-
-
-
 
 let name = document.getElementById("name");
 let div = document.getElementById("login");

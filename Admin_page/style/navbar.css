@@ -53,10 +53,12 @@
 }
 #dashboard > #LeftSideBar {
   /* border: 1px solid red; */
+ 
   background-color: rgba(247, 59, 181, 0.995);
   border-radius: 10px;
   padding: 20px;
 }
+
 #username i {
   font-size: 26px;
 }
