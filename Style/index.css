@@ -889,3 +889,109 @@ b {
   color: black;
   margin-top: 10px;
 }
+
+
+
+#three-in_row{
+  width: 83%;
+ border: 0px solid black;
+ height: 550px;
+ margin: auto;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: space-evenly;
+ margin-top: 30px;
+}
+.best{
+  width: 97%;
+  border: 0px solid black;
+  height: 540px;
+  margin: auto;
+}
+.sell{
+  width: 100%;
+  border: 0px solid black;
+  height: 170px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:30% 1fr ;
+}
+.pro-img>img{
+width: 100%;
+}
+.pro-detail>p{
+text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#star{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+#all-price{
+  width: 80%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+#old-price{
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-right: 6px;
+  font-weight: 300;
+}
+#cur-price{
+  color: #DD0285;
+  font-size: 18px;
+  font-weight: 500;
+}
+#off{
+  color: #008000;
+  font-weight: 500;
+  margin-left: 5px;
+}
+#butn{
+  /* border: 1px solid black;  */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#butn>button{
+background-color: #DD0285;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+#dil{
+  background-color: #666666;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+#dil:hover {
+  background-color: #DD0285;
+  cursor: pointer;
+}
+#butn>button:hover {
+  background-color: #CB4797;
+  cursor: pointer;
+}
+
+.only-one{
+  width: 83%;
+  height: auto;
+  margin: auto;
+  margin-top: 40px;
+}
