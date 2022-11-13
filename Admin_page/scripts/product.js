@@ -6,12 +6,14 @@ document.getElementById('logout').addEventListener('click',logout);
 let name_div = document.getElementById('name');
 
 
+
 let adminData = JSON.parse(localStorage.getItem('admin_data'));
 if(adminData){
   let h3 = document.createElement('h3');
   h3.innerText=adminData.first_name;
   name_div.append(h3);
 }
+
 
 
 let name = document.getElementById("name");
