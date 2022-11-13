@@ -132,3 +132,16 @@ document.getElementById("pin").innerText=data[data.length-1].pin;
 let paisa=JSON.parse(localStorage.getItem("paisa"))
 document.getElementById("subtotal").innerText=paisa+".00";
 document.getElementById("total").innerText=paisa+49.99+11;
+
+//fuc to update user name
+let user_div = document.getElementById('Uname');
+function changeName(){
+  let udata = JSON.parse(localStorage.getItem('personal_data'));
+  if(udata){
+    user_div.innerHTML = null;
+    let h4 = document.createElement('h4');
+    h4.innerText=udata.first_name;
+    user_div.append(h4);
+  }
+}
+changeName();

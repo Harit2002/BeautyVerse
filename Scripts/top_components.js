@@ -55,7 +55,7 @@ const navbar = () => {
         <a href="/-puny-corn-6420/adminLogin.html">Admin Login</a>
         <a href="/-puny-corn-6420/adminRegister.html">Admin Register</a>
         </div> 
-        <h4>My Account</h4>
+        <div id="Uname"><h4>My Account</h4></div>
   </div>
   </div>
   </div>
