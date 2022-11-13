@@ -79,7 +79,7 @@ let main = document.getElementById("product-list");
   let helloo = JSON.parse(localStorage.getItem("j")) || []
 console.log(helloo)
   show(helloo)
-  let cartArr = JSON.parse(localStorage.getItem("items")) || []
+  let cartArr = JSON.parse(localStorage.getItem("cartdata")) || []
 
 function show(data){
     main.innerHTML = null;

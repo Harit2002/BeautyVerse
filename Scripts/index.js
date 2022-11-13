@@ -125,7 +125,7 @@ makeup(helloo);
 
 
 
-let cartArr = JSON.parse(localStorage.getItem("items")) || []
+let cartArr = JSON.parse(localStorage.getItem("cartdata")) || []
 function makeup(data){
     main.innerHTML = null;
      data[0].makeup.forEach(

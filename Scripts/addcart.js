@@ -131,6 +131,7 @@ btn2.className="butn"
 btn2.onclick=()=>{
     window.prompt
     const Enter_QTY=prompt(`Enter number of items`)
+    window.location.reload()
     number.innerText=Enter_QTY;
     el.quantity=Enter_QTY;
     localStorage.setItem("cartdata",JSON.stringify(data))
