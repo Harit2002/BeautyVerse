@@ -1,9 +1,9 @@
-import { navbar,footer } from "/-puny-corn-6420/Scripts/top_components.js";
+import { navbar,footer } from "../Scripts/top_components.js";
  document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
 
 
-    import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
+    import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "../Scripts/dropdown.js"
 
 
 let div = document.querySelector(".open-div");
