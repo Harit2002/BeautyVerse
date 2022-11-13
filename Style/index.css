@@ -1,9 +1,7 @@
-
 *{
     margin: 0px;
     padding: 0px;
 }
-
 /* #top-img {
     width: 98%;
     height: auto;
@@ -21,7 +19,6 @@
     /* display: block; */
     /* position: absolute; */
 }
-
 #logo {
     width: 25%;
     margin: 8px 10px;
@@ -136,7 +133,6 @@
     height: 50px;
     display: flex;
     text-align: center;
-
 }
  #account>button{
     height: 30px;
@@ -157,12 +153,10 @@
     font-size: 18px;
     margin-left: 10px;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -173,19 +167,15 @@
   margin-top: 205px;
   text-align: left;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
- 
 }
-
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -198,7 +188,6 @@
     align-items: center;
     color: white;
 }
-
 .option {
     width: 60%;
     display: flex;
@@ -208,7 +197,6 @@
 .option>div{
     display: flex;
 }
-
 .option>a {
     font-size: 14px;
     padding: 15px 18px;
@@ -217,8 +205,6 @@
     text-decoration: none;
     font-weight: bolder;
 }
-
-
 #cart-div>a{
     padding: 5px 10px;
     font-size: 16px;
@@ -243,9 +229,7 @@
 #cart-div>a>img{
     width: 35px;
     padding-top: 5px;
-
 }
-
 .option>a:nth-child(1),#cart-div{
     cursor: pointer;
     background-color: #b7026f;
@@ -254,15 +238,6 @@
     cursor: pointer;
     background-color: #b7026f;
 }
-
-
-
-
-
-
-
-
-
 .open-div{
     width: 70%;
     background-color: #ffffff;
@@ -296,9 +271,7 @@
     border-bottom: 2px solid #666666;
     margin-left: 70px;
 }
-
 #topBtn {
-
     background-color: #dd0285;
     color: white;
     border: none;
@@ -328,7 +301,7 @@
     
     width: 13%;
     padding: 15px 5px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     font-weight: 500;
     font-size: 14px;
     display: flex;
@@ -481,7 +454,7 @@ margin: auto;
 width: 80%;
 }
 #card-sec{
-border: 1px solid black;
+border: 0px solid black;
 margin: auto;
 /* display: grid;
 grid-template-columns: repeat(4,1fr); */
@@ -492,12 +465,125 @@ width: 83%;
     border: 1px solid black;
 }
 #slide-cards{
-    border: 1px solid black;
+    border: 0px solid black;
     margin: auto;
      display: grid;
     grid-template-columns: repeat(4,1fr); 
     width: 83%;
+}
+#two-pix{
+   width: 83%;
+   border: 0px solid black;
+   height: auto;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+    align-items: center; 
+    justify-content: space-evenly; 
+   margin-top: 30px;
+}
+#three-in_row{
+    width: 83%;
+   border: 0px solid black;
+   height: 550px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+    align-items: center; 
+    justify-content: space-evenly; 
+   margin-top: 30px;
+}
+.best{
+    width: 97%;
+    border: 0px solid black;
+    height: 540px;
+    margin: auto;
+}
+.sell{
+    width: 100%;
+    border: 0px solid black;
+    height: 170px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:30% 1fr ;
+}
+.pro-img>img{
+width: 100%;
+}
+.pro-detail>p{
+text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#star{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+#all-price{
+    width: 80%; 
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+#old-price{
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-right: 6px;
+    font-weight: 300;
+}
+#cur-price{
+    color: #dd0285;
+    font-size: 18px;
+    font-weight: 500;
+}
+#off{
+    color: #008000;
+    font-weight: 500;
+    margin-left: 5px;
+}
+#butn{
+    /* border: 1px solid black;  */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#butn>button{
+background-color: #dd0285;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+#dil{
+    background-color: #666666;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+#dil:hover {
+    background-color: #dd0285;
+    cursor: pointer;
+}
 
+#butn>button:hover {
+    background-color: #cb4797;
+    cursor: pointer;
+}
+.only-one{
+    width: 83%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
 }
 .open-div{
     width: 70%;
@@ -570,7 +656,7 @@ width: 83%;
 #cart-div>span{
     color: white;
 }
-=======
+
 #midnav{
     width: 80%;
     display: flex;
