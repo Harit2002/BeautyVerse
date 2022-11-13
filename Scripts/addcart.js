@@ -96,7 +96,7 @@ let sum=0;
 
 const append=(data)=>{
    table.innerHTML=null;
-    data.forEach((el)=>{
+    data.forEach((el,i)=>{
         let row=document.createElement("tr")
 let item=document.createElement("td")
 let img=document.createElement("img")
@@ -110,6 +110,7 @@ price.innerText=el.price;
 let number=document.createElement("td")
 number.innerText=el.quantity;
 let subtotal=document.createElement("td")
+
 subtotal.innerHTML=Number(el.quantity)*Number(el.price);
 sum=sum+(Number(el.quantity)*Number(el.price));
 document.getElementById("subtotal").innerText=sum+".00";
@@ -138,12 +139,18 @@ btn2.onclick=()=>{
     document.getElementById("subtotal").innerText=sum+".00";
 document.getElementById("total").innerText=(sum+50)+".00"
 paisa=sum;
+window.location.reload()
 localStorage.setItem("paisa",JSON.stringify(paisa))
+let sum = (localStorage.getItem("paisa")) || 0;
+  document.getElementById("cart2").innerText = `₹`+sum
+  
 }
 let btn3=document.createElement("button")
 btn3.innerText="Remove"
 btn3.className="butn"
 btn3.onclick=()=>{
+
+  removeData(i)
 
 }
 
@@ -163,6 +170,13 @@ table.append(row,row2)
 
 
 append(data)
+
+function removeData(i){
+   window.location.reload()
+   data.splice(i,1);
+   localStorage.setItem("cartdata",JSON.stringify(data))
+   append(data);
+}
 
 
 

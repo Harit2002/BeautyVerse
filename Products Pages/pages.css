@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 #heading{
-    z-index: 1;
-    width: 200%;
-    padding-left: 150px;
-    /* margin-top: -40px; */
-    font-size: 17px;
+    
+    width: 80%;
+    margin: auto;
+    /* padding-left: 965px; */
+    margin-top: 0px;
+    font-size: 1px;
     /* font-weight: 900; */
-    padding-bottom: 7px;
+    /* padding-bottom: 7px; */
+    border: none;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
 }
-#heading>span>a{
+/* #heading>span>a{
     text-decoration: none;
-    color: black;
-}
+
+} */
 #container {
     
    
@@ -96,7 +99,7 @@
 }
 #card {
     height: 500px;
-    border: 1px solid #ebebeb;
+    /* border: 1px solid #ebebeb; */
     padding: 0px 15px;
     padding-bottom: 25px;
     position: relative;

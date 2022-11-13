@@ -31,3 +31,7 @@ form.addEventListener("submit", (e) => {
     }
 })
 
+window.onload = ()=>{
+    let sum = (localStorage.getItem("paisa")) || 0;
+    document.getElementById("cart2").innerText = `₹`+sum
+  }
