@@ -93,6 +93,7 @@ document.getElementById("brand").addEventListener("mouseout", () => {
 let wishlist=JSON.parse(localStorage.getItem("wishlist"))||[];
 let table=document.querySelector("#tbody")
 let sum=0;
+
 const append=(data)=>{
    table.innerHTML=null;
     data.forEach((el,i)=>{
@@ -123,6 +124,7 @@ btn1.onclick=()=>{
     wishlist.push(el)
     localStorage.setItem("wishlist",JSON.stringify(wishlist))
 }
+
 let btn2=document.createElement("button")
 btn2.innerText="Edit"
 btn2.className="butn"
