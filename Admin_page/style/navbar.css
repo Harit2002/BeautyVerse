@@ -86,3 +86,6 @@
 li + button{
   display: none;
 }
+#dashboard > #LeftSideBar div{
+  cursor: pointer;
+}
