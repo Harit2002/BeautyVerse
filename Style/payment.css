@@ -1,6 +1,6 @@
 #lineTop {
     display: flex;
-    margin-top: 40px;
+    margin-top: 66px;
     margin-left: 25px;
     align-items: center;
     margin-bottom: 50px;
@@ -12,6 +12,7 @@
     height: 8px;
     background-color: #666666;
     border-radius: 6px;
+    margin-top: 0px;
 
 }
 

@@ -92,10 +92,10 @@ userdata()
 }
 let count=0;
 const userdata=()=>{
-    if(form.firtname.value==""||form.address.value==""||form.mobile.value==""||form.pincode.value==""){
-        alert("Enter all details")
-        return;
-    }
+    // if(form.firtname.value==""||form.address.value==""||form.mobile.value==""||form.pincode.value==""){
+    //     alert("Enter all details")
+    //     return;
+    // }
     count++
     let obj={
         name:form.firtname.value,

@@ -164,8 +164,8 @@ function displayFrag() {
   div.classList.remove("column");
   div.style.boxShadow = "rgb(38, 57, 77) 0px 20px 30px -10px";
   div.style.justifyContent = "start";
-  div.style.width = "18%";
-  div.style.marginRight = "490px"
+  div.style.width = "78%";
+  // div.style.marginLeft = "720px"
   
 
   let div1 = document.createElement("div");
