@@ -8,7 +8,7 @@ document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
 
-import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
+import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "./dropdown.js"
 
 
 let div = document.querySelector(".open-div");

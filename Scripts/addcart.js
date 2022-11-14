@@ -1,6 +1,6 @@
-import {navbar,footer} from './top_components.js'
+import {navbar,footer} from './top_components'
 document.getElementById("navbar").innerHTML=navbar();
-import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "/-puny-corn-6420/Scripts/dropdown.js"
+import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "./dropdown.js"
 
 let data= JSON.parse(localStorage.getItem("cartdata"))
 let paisa=JSON.parse(localStorage.getItem("paisa"))||"";
