@@ -1,7 +1,9 @@
 const navbar = () => {
     return `<div id="navbar-1">
   <div id="logo">
+
   <a href="index.html">
+
   <img  alt="logo"  src="https://i.ibb.co/MnjWFL0/image-1.png"/>
   
   </a>
