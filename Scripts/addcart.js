@@ -1,5 +1,6 @@
-import {navbar,footer} from './top_components'
-document.getElementById("navbar").innerHTML=navbar();
+import {navbar,footer} from './top_components.js'
+let nav_div = document.getElementById('navbar');
+nav_div.innerHTML = navbar();
 import { displayLists,displaySkins,displayHair,displayPerosnal,displayMom,displayFrag,displayAyur,displayBrand} from "./dropdown.js"
 
 let data= JSON.parse(localStorage.getItem("cartdata"))
