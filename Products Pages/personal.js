@@ -1,4 +1,4 @@
-import { navbar,footer } from "../Scripts/top_components.js";
+import { navbar,footer } from "../Scripts/page_component.js";
  document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
 let container = document.getElementById("container");

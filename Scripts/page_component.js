@@ -1,9 +1,7 @@
 const navbar = () => {
-    return `<div id="navbar-1">
+  return `<div id="navbar-1">
   <div id="logo">
-
-  <a href="index.html">
-
+  <a href="../index.html">
   <img  alt="logo"  src="https://i.ibb.co/MnjWFL0/image-1.png"/>
   
   </a>
@@ -53,10 +51,10 @@ const navbar = () => {
         </button>
         <div class="dropdown-content">
 
-        <a href="signin.html">User Login</a>
-        <a href="register.html">User Register</a>
-        <a href="adminLogin.html">Admin Login</a>
-        <a href="adminRegister.html">Admin Register</a>
+        <a href="../signin.html">User Login</a>
+        <a href="../register.html">User Register</a>
+        <a href="../adminLogin.html">Admin Login</a>
+        <a href="../adminRegister.html">Admin Register</a>
 
         </div> 
         <div id="Uname"><h4>My Account</h4></div>
@@ -65,18 +63,18 @@ const navbar = () => {
   </div>
   <nav id="navbar3">
         <div class="option">
-            <a id="makeup" href = "./Products Pages/makeup.html"><span >MAKEUP</span></a>
-            <a  id="skin" href = "./Products Pages/skin.html"><span>SKIN</span></a>
-            <a id="hair" href = "./Products Pages/hair.html"><span >HAIR</span></a>
-            <a id="personal" href = "./Products Pages/personal.html"><span >PERSONAL CARE</span></a>
-            <a id="mom" href = "./Products Pages/mom.html"><span >MOM & BABY CARE</span></a>
-           <a id="frag" href = "./Products Pages/fragrance.html"> <span >FRAGRANCE</span></a>
-           <a  id="aurveda" href = "./Products Pages/ayurveda.html"> <span>AYURVEDA</span></a>
-            <a id="brand" href = "./Products Pages/brand.html"><span >BRAND</span></a>
+            <a id="makeup" href = "makeup.html"><span >MAKEUP</span></a>
+            <a  id="skin" href = "skin.html"><span>SKIN</span></a>
+            <a id="hair" href = "hair.html"><span >HAIR</span></a>
+            <a id="personal" href = "personal.html"><span >PERSONAL CARE</span></a>
+            <a id="mom" href = "mom.html"><span >MOM & BABY CARE</span></a>
+           <a id="frag" href = "fragrance.html"> <span >FRAGRANCE</span></a>
+           <a  id="aurveda" href = "ayurveda.html"> <span>AYURVEDA</span></a>
+            <a id="brand" href = "brand.html"><span >BRAND</span></a>
         </div>
         <div id="cart-div">
 
-        <a href="addcart.html">
+        <a href="../addcart.html">
 
             <img src="https://findicons.com/files/icons/1579/devine/48/cart.png" alt="">
             <span class = "span">My Cart - </span>
@@ -84,10 +82,10 @@ const navbar = () => {
             </a>
         </div>
     </nav>
-    <div class="open-div"></div>`
-}
+    <div class="open-div"></div>`;
+};
 const footer = () => {
-    return `<div id="sect">
+  return `<div id="sect">
      <div id="first">
      <h3 class="hdng">CONTACT INFO</h3>
      <ul class="list">
@@ -147,7 +145,7 @@ const footer = () => {
      <h4>Signup for Newsletter</h4>
      <input type="text" placeholder="SignUp for Newsletter">
      <button>Subscribe</button>
-     </div>`
-}
+     </div>`;
+};
 
-export { navbar, footer }
+export { navbar, footer };

@@ -181,4 +181,4 @@ const deletepost=async(delete_id)=>{
   function logout(){
     window.location.href = "../index.html"
   }
-      
+
