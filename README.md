@@ -8,11 +8,13 @@
 5. LocalStorage
 
 ### Team Members :--
-1. Shubham ()
-2. Mamta ()
-3. Vivek ()
-4. Prashant ()
-5. Harit ()
+1. Harit Khushwas(Team Lead)
+2. Mamta (https://github.com/Mamta305)
+3. Vivek (https://github.com/imvsoni24)
+4. Prashant (https://github.com/Prashant7970)
+5. Shubham (https://github.com/kalwalesm2)
+
+
 
 ## 1. Home Page :-
 ![Landing Page](https://lh5.googleusercontent.com/YnHS95Be7EoD4iwTxEtU5WmEYMy9EH_WUfcM-JutD5vn1Xyjvb3kzHt3lCy6xebnPQk=w2400)
