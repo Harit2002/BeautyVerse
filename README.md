@@ -8,7 +8,7 @@
 5. LocalStorage
 
 ### Team Members :--
-1. Harit Khushwas(Team Lead)
+1. Harit Khushwas  (Team Lead)
 2. Mamta (https://github.com/Mamta305)
 3. Vivek (https://github.com/imvsoni24)
 4. Prashant (https://github.com/Prashant7970)
